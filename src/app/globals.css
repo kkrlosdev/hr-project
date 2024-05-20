@@ -6,18 +6,26 @@
   color: #d50057;
 }
 
-.bg-pink-gelco{
-  background-color: #d50057
-}
-
-.bg-blue-gelco{
-  background-color: #270089;
-}
-
-
 .blue-gelco{
   color: #270089;
 }
+
+.cyan-gelco{
+  color: rgb(000, 161, 200);
+}
+
+.bg-pink-gelco{
+  background-color: rgb(197, 022, 087)
+}
+
+.bg-blue-gelco{
+  background-color: rgb(052, 044, 125);
+}
+
+.bg-cyan-gelco{
+  background-color: rgb(000, 161, 200);
+}
+
 
 @layer utilities {
   .text-balance {

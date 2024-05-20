@@ -1,5 +1,6 @@
 import {Logo} from "../components/Logo"
 import { KnowMoreButton } from "../components/KnowMore"
+import Image from "next/image"
 
 export default function Cases(){
     return (
@@ -9,33 +10,32 @@ export default function Cases(){
                 <h1 className="ml-6 text-3xl blue-gelco">DERECHOS <br/> HUMANOS </h1>
             </header>
 
-            <main className="flex justify-center mb-2 space-x-24">
+            <main className="flex justify-center mb-2 space-x-36">
                 
                 <section className="flex flex-col items-center mt-4">
                     <h1 className="self-start font-semibold blue-gelco">Caso 1</h1>
-                    <h2 className="self-start font-semibold blue-gelco">Derechos humanos</h2>
-                    <div className="my-4 text-xl font-semibold text-white transition-all rounded w-72 h-72 bg-blue-gelco hover:scale-105">
-                        <h1 className="m-2">Iniciar <br/> Caso 1</h1>
+                    <div className="my-2 text-xl font-semibold text-white transition-all rounded w-72 h-72 bg-blue-gelco hover:scale-105">
+                        <h1 className="m-3">Derechos <br/> Humanos</h1>
+                        <Image className="ml-4" src="/derechos_humanos.svg" alt="Derechos humanos" width={250} height={100}/>
                     </div>
-                    <KnowMoreButton/>
+                    <KnowMoreButton href="./case1" color="bg-blue-gelco"/>
                 </section>
 
                 <section className="flex flex-col items-center">
                     <h1 className="self-start font-semibold blue-gelco">Caso 2</h1>
-                    <h2 className="self-start font-semibold blue-gelco">Debida diligencia</h2>
-                    <div className="my-4 text-xl font-semibold text-white transition-all rounded w-72 h-72 bg-pink-gelco hover:scale-105">
-                        <h1 className="m-2">Iniciar <br/> Caso 2</h1>
+                    <div className="my-3 text-xl font-semibold text-white transition-all rounded w-72 h-72 bg-pink-gelco hover:scale-105">
+                        <h1 className="m-3">Debida <br/> Diligencia</h1>
+                        <Image className="mt-4 ml-2" src="/3.svg" alt="Debida Diligencia" width={240} height={100}/>
                     </div>
-                    <KnowMoreButton/>
+                    <KnowMoreButton color="bg-pink-gelco" href="/"/>
                 </section>
                 
-                <section className="flex flex-col items-center mt-1">
+                <section className="flex flex-col items-center">
                     <h1 className="self-start font-semibold blue-gelco">Caso 3</h1>
-                    <h2 className="self-start font-semibold blue-gelco">Remediación</h2>
-                    <div className="my-4 text-xl font-semibold text-white transition-all rounded w-72 h-72 bg-cyan-600 hover:scale-105">
-                        <h1 className="m-2">Iniciar <br/> Caso 3</h1>
+                    <div className="my-3 text-xl font-semibold text-white transition-all rounded w-72 h-72 bg-cyan-gelco hover:scale-105">
+                        <h1 className="m-3">Remediación</h1>
                     </div>
-                    <KnowMoreButton/>
+                    <KnowMoreButton color="bg-cyan-gelco" href="/"/>
                 </section>
             </main>
         </>
