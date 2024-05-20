@@ -7,8 +7,8 @@ Los derechos humanos son esenciales para garantizar la dignidad, la libertad y l
 Este proyecto se encuentra actualmente en desarrollo. Estamos trabajando arduamente para construir una plataforma intuitiva y efectiva.
 
 ## Tech Stack
-- **Next.js**
-- **TailwindCSS**
-- **React**
+- **Next.js** <img align="center" src="https://skillicons.dev/icons?i=nextjs"/>
+- **TailwindCSS** <img align="center" src="https://skillicons.dev/icons?i=tailwind"/>
+- **React** <img align="center" src="https://skillicons.dev/icons?i=react"/>
 
 ¡Gracias por tu interés en el Gelco Human Rights Project!
