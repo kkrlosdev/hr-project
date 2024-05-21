@@ -26,6 +26,15 @@
   background-color: rgb(000, 161, 200);
 }
 
+.headerPage1{
+  background-image: url('/ddhh_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
 
 @layer utilities {
   .text-balance {

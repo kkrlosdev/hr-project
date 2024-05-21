@@ -27,7 +27,7 @@ export default function Cases(){
                         <h1 className="m-3">Debida <br/> Diligencia</h1>
                         <Image className="mt-4 ml-2" src="/3.svg" alt="Debida Diligencia" width={240} height={100}/>
                     </div>
-                    <KnowMoreButton color="bg-pink-gelco" href="/"/>
+                    <KnowMoreButton color="bg-pink-gelco" href="/case2"/>
                 </section>
                 
                 <section className="flex flex-col items-center">
@@ -35,7 +35,7 @@ export default function Cases(){
                     <div className="my-3 text-xl font-semibold text-white transition-all rounded w-72 h-72 bg-cyan-gelco hover:scale-105">
                         <h1 className="m-3">Remediación</h1>
                     </div>
-                    <KnowMoreButton color="bg-cyan-gelco" href="/"/>
+                    <KnowMoreButton color="bg-cyan-gelco" href="/case3"/>
                 </section>
             </main>
         </>
