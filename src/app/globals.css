@@ -27,7 +27,25 @@
 }
 
 .headerPage1{
-  background-image: url('/ddhh_background.png');
+  background-image: url('/assets/ddhh_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.headerPage2{
+  background-image: url('/assets/debida_diligencia.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.headerPage3{
+  background-image: url('/assets/case3-background.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
