@@ -1,5 +1,7 @@
 import Image from "next/image";
 import {Logo} from "./components/Logo"
+import UkIcon from "@/app/assets/uk-icon.png"
+import EsIcon from "@/app/assets/spain-icon.png"
 
 export default function Home() {
   return (
@@ -15,8 +17,8 @@ export default function Home() {
         </div>
 
         <div className="absolute top-0 right-0 m-6">
-          <button><Image src="/uk-icon.png" alt="UK" width={30} height={30} /></button>
-          <button><Image src="/spain-icon.png" alt="UK" width={30} height={30} /></button>
+          <button className="mx-1"><Image src={UkIcon} alt="UK" width={30} height={30} /></button>
+          <button><Image src={EsIcon} alt="UK" width={30} height={30} /></button>
         </div>
       </section>
       <section>

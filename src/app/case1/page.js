@@ -1,34 +1,24 @@
-import { Logo } from "../components/Logo"
 import { BackButton} from "../components/BackButton"
+import { InfoCase } from "../components/InfoCase"
 
 export default function Case1(){
     return(
         <>
             <header className="headerPage1">
                 <BackButton/>
-
-                <section style={{width: "50%"}} className="relative top-36 left-1">
-
-                    <div className="flex flex-col items-center justify-center h-56 space-y-6 text-white bg-blue-gelco">
-                        <h1 className="text-5xl">Derechos humanos</h1>
-                        <h2 className="text-2xl">Conociendo los derechos humanos</h2>
-                    </div>
-                    <div className="flex items-center justify-center h-16 bg-cyan-gelco p-7">
-                        <Logo/>
-                    </div>
-
-                </section>
-                
+                <InfoCase subtitle={"Conociendo los derechos humanos"}/>             
             </header>
 
             <hr className="hr-gradient"/>
 
             <section className="flex flex-col items-center justify-center mx-auto mb-4 text-justify" style={{width: "650px"}}>
+
+                <h1 className="self-start my-4 text-2xl font-semibold cyan-gelco">Introducción</h1>
+
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-4 w-14 h-14">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
                 </svg>
 
-                <h1 className="self-start my-3 text-2xl font-semibold cyan-gelco">Introducción</h1>
                 <p className="self-start text-xl">
                     ¿Imaginas algo <span className="cyan-gelco">básico, innato y universal?</span>
                 </p>
