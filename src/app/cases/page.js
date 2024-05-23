@@ -3,6 +3,7 @@ import { KnowMoreButton } from "../components/KnowMore"
 import Image from "next/image"
 import derechos_humanos_card from "@/app/assets/derechos_humanos.svg"
 import debida_diligencia_card from "@/app/assets/debida_diligencia.svg"
+import remediacion_card from "@/app/assets/remediacion.png"
 
 export default function Cases(){
     return (
@@ -36,7 +37,7 @@ export default function Cases(){
                     <h1 className="self-start font-semibold blue-gelco">Caso 3</h1>
                     <div className="my-3 text-xl font-semibold text-white transition-all rounded w-72 h-72 bg-cyan-gelco hover:scale-105">
                         <h1 className="m-3">Remediación</h1>
-                        <Image className="mt-10 ml-4" src={derechos_humanos_card} alt="Derechos humanos" width={250} height={100}/>
+                        <Image className="mt-5 ml-6" src={remediacion_card} alt="Derechos humanos" width={250} height={100}/>
                     </div>
                     <KnowMoreButton color="bg-cyan-gelco" href="/case3"/>
                 </section>
