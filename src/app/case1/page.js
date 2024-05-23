@@ -43,10 +43,15 @@ export default function Case1(){
                     Algo que implica que podamos desarrollar una <span className="cyan-gelco">vida en común digna, satisfactoria e igualitaria,</span> ¿lo imaginas?
                 </p>
 
-                <hr className="hr-gradient"/>
+            </section>
 
+            <section className="flex flex-col items-center justify-center mx-auto mb-4 text-justify" style={{width: "770px"}}>
                 <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">¿Qué son los derechos humanos?</h1>
+                <p className="self-start mb-3">Observa el siguiente vídeo y descubre qué son los Derechos Humanos</p>
 
+                <video controls>
+                    <source src="/videos/derechos.mp4" type="mp4/video"></source>
+                </video>
             </section>
         </>
     )
