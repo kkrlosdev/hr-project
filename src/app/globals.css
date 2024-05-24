@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .pink-gelco{
-  color: #d50057;
+  color: rgb(197, 022, 087);
 }
 
 .blue-gelco{
-  color: #270089;
+  color: rgb(052, 044, 125);
 }
 
 .cyan-gelco{
