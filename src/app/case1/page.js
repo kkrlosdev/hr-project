@@ -1,6 +1,5 @@
 import { BackButton} from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
-import { Carousel } from "@/app/components/Carousel"
 import dynamic from 'next/dynamic';
 
 const DynamicCarousel = dynamic(() => import('@/app/components/Carousel'), { ssr: false });

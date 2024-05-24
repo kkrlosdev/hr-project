@@ -4,7 +4,7 @@ import { BackButton } from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
 import Image from "next/image"
 import Image1Case3 from "@/app/assets/case3-image1.jpg"
-import { Delicious_Handrawn } from "next/font/google"
+import LineaEtica from "@/app/assets/case3-image2.jpg"
 
 export default function Case1(){
     useEffect(() => {
@@ -24,6 +24,27 @@ export default function Case1(){
         return () => {
             if (Box1) {
                 Box1.removeEventListener("click", toggleVisibility);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        const Box2 = document.getElementById("MainFeatures");
+        const text2 = document.getElementById("text-2");
+        
+        const toggleVisibility = () => {
+            if (text2.hasAttribute("hidden")) {
+                text2.removeAttribute("hidden");
+            } else {
+                text2.setAttribute("hidden", "");
+            }
+        };
+        if (Box2) {
+            Box2.addEventListener("click", toggleVisibility);
+        }
+        return () => {
+            if (Box2) {
+                Box2.removeEventListener("click", toggleVisibility);
             }
         };
     }, []);
@@ -62,9 +83,8 @@ export default function Case1(){
 
             <section className="flex flex-col items-center justify-center mx-auto my-10 text-justify" style={{width: "770px"}}>
                 <h1 className="self-start mt-10 mb-4 text-2xl font-semibold cyan-gelco">Los mecanismos de remediación</h1>
-                <p className="text-xl">El proceso de Debida Diligencia nos ayuda a reducir el riesgo de afectar a nuestro entorno. En ocasiones, incluso con un proceso robusto, se producen consecuencias negativas en los Derechos Humanos que debemos abordar.</p>
+                <p className="text-xl">Estamos <span className="cyan-gelco">comprometidos a crear un ambiente de trabajo propio y de nuestros grupos de interés</span> que fomente la visibilización, el apoyo y la apertura de la comunicación hacia el respeto de los Derechos Humanos.  Cuando se hace necesario, buscamos significado y consulta con expertos externos, incluidos los críticos y líderes de pensamiento reconocidos en materia de derechos humanos</p>
 
-                <p className="mt-1 text-xl cyan-gelco">En virtud de nuestra responsabilidad de respetar los Derechos Humanos, debemos remediar o reparar ese tipo de situaciones, ya sea por nosotros mismos o en cooperación con otros actores.</p>
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-4 w-14 h-14">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
@@ -72,7 +92,7 @@ export default function Case1(){
 
                 <h1 className="self-start text-2xl font-semibold cyan-gelco">Rol del estado</h1>
 
-                <p className="my-2 text-xl">Los estados deben <span className="cyan-gelco">tomar medidas apropiadas</span> para garantizar que cuando se produzcan abusos de Derechos Humanos en su territorio y/o jurisdicción, los afectados puedan acceder a mecanismos de reparación eficaces, ya sean judiciales o extrajudiciales.</p>
+                <p className="my-2 text-xl">Nos esforzamos por <span className="cyan-gelco">trabajar cooperativamente con nuestro gobierno y organizaciones de la sociedad civil</span> para avanzar en la solución de los problemas. Buscamos comprender la naturaleza y el contexto de la evolución del camino hacia los derechos humanos y cómo podemos marcar la diferencia. </p>
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-4 w-14 h-14">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
@@ -86,7 +106,7 @@ export default function Case1(){
                 </svg>
 
                 <h1 className="self-start text-2xl font-semibold cyan-gelco">Características</h1>
-                <p className="my-2 text-xl">Los procedimientos de remediación <span className="cyan-gelco">deben ser imparciales</span> y estar <span className="cyan-gelco">protegidos contra toda forma de corrupción</span> o cualquier intento de influir en su resultado.</p>
+                <p className="my-2 text-xl">Los procedimientos de remediación <span className="cyan-gelco">deben ser imparciales, transparentes y efectivos</span> y estar <span className="cyan-gelco">protegidos contra toda forma de corrupción</span> o cualquier intento de influir en su resultado.</p>
 
             </section>
 
@@ -129,26 +149,16 @@ export default function Case1(){
 
             <div hidden id="text-1" style={{width: "680px"}} className="p-4 border rounded">
                 <p className="text-xl">
-                    <span className="cyan-gelco">Diseñamos los mecanismos de reclamación en colaboración con nuestros socios y otros stakeholders.</span> Nos comprometemos a verificar cualquier denuncia o queja recibida y cooperar activamente para reparar el daño causado por nuestra actividad o la de nuestros contratistas. <br/>
-                    <span className="cyan-gelco"> Nuestros relacionadores comunitarios son una pieza fundamental</span> para recabar discrepancias de forma incipiente, pues construyen el diálogo y la confianza al acercarse proactivamente a las comunidades en busca de su feedback sobre los impactos que la operación produce en el entorno.
-                    Todo ello permite anticiparnos, dar respuesta a incidentes menores derivados de nuestras actividades antes de que escalen y proporcionar una vía temprana de reparación a las partes afectadas.
-                    Las dos principales funciones de estos mecanismos son:
+                    Para atender denuncias por afectaciones a los Derechos Humanos, Gelco <span className="cyan-gelco">cuenta con mecanismos accesibles para la recepción de peticiones, quejas y reclamos,</span> que permiten atender y resolver de manera oportuna, transparente y eficaz las denuncias relacionadas con la operación. Estos mecanismos son supervisados por la alta dirección a través de informes periódicos de rendición de cuentas por su funcionamiento.  Además, <span className="cyan-gelco">se realizan valoraciones de la opinión de los usuarios</span> sobre los mecanismos de reclamación para su mantenimiento y mejora.
                 </p>
 
-                <div className="p-1 mt-2 border rounded">
-                    <h1 className="flex items-center justify-center text-xl text-center text-white bg-cyan-gelco h-14">Identificación de impactos</h1>
-                    <p className="my-2 text-xl">Contribuir a <span className="cyan-gelco">determinar los impactos sobre los Derechos Humanos</span> y ofrecer un cauce para que las personas directamente afectadas por las operaciones expresen su preocupación, sin miedo a represalias, en el contexto de un entorno de comprensión y respeto de los Derechos Humanos.
-                        Las reclamaciones recibidas pueden provenir de nuestros propios mecanismos de reclamación o de cualquier otra vía judicial o extrajudicial.</p>
-                </div>
-
-                <div className="p-1 border rounded">
-                    <h1 className="flex items-center justify-center text-xl text-center text-white bg-cyan-gelco h-14">Detección temprana</h1>
-                    <p className="my-2 text-xl">Permitir que la compañía <span className="cyan-gelco">se ocupe de los daños detectados y repare las consecuencias</span> de forma temprana y directa, ayudándonos a prevenir riesgos sociales incipientes.</p>
-                </div>
+                <p className="mt-1 text-xl">
+                Además de los mecanismos internos, Gelco reconoce la legitimidad de los mecanismos institucionales establecidos por la ley para que cualquier persona interponga quejas o denuncias en materia de Derechos Humanos, cuando considere que la operación lo impacta negativamente
+                </p>
 
             </div>
 
-            <div className="flex items-center w-full h-20 gap-4 my-4 rounded-lg shadow-xl bg-cyan-gelco hover:cursor-pointer">
+            <div className="flex items-center w-full h-20 gap-4 my-4 rounded-lg shadow-xl bg-cyan-gelco hover:cursor-pointer" id="MainFeatures">
 
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="ml-4 size-6">
                         <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clipRule="evenodd" />
@@ -156,6 +166,23 @@ export default function Case1(){
 
                 <p className="text-xl text-white">Características principales</p>
             </div>
+
+            <div hidden id="text-2" style={{width: "680px"}} className="p-4 border rounded">
+                <p className="text-xl">Los mecanismos de reclamación se deben caracterizar por ser:</p>
+                <ol className="ml-4 list-disc cyan-gelco">
+                    <li className="list-item">Oportunos</li>
+                    <li className="list-item">Transparentes</li>
+                    <li className="list-item">Eficaces</li>
+                </ol>
+                <p className="text-xl">Además, no se debe privar a ninguna persona de poder interponer quejas o denuncias en Materia de Derechos Humanos, cuando considere que la operación impacta negativamente.</p>
+            </div>
+
+        <div>
+            <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">Línea ética</h1>
+            <p className="text-xl">Es un mecanismo administrado por un tercero en el que cualquier persona interna o externa a la organización <span className="cyan-gelco">puede presentar quejas o denuncias</span> incluso anónimas, relacionadas con eventos de fraude/corrupción o conductas contrarias al código de ética, mediante los siguientes canales:</p>
+            <Image src={LineaEtica} alt="Línea ética" width={800} height={300} className="my-4"/>
+        </div>
+
 
         </section>
 
