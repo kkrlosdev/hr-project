@@ -1,5 +1,9 @@
 import { BackButton} from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
+import { Carousel } from "@/app/components/Carousel"
+import dynamic from 'next/dynamic';
+
+const DynamicCarousel = dynamic(() => import('@/app/components/Carousel'), { ssr: false });
 
 export default function Case1(){
     return(
@@ -20,19 +24,12 @@ export default function Case1(){
                 </svg>
 
                 <p className="self-start text-xl">
-                    ¿Imaginas algo <span className="cyan-gelco">básico, innato y universal?</span>
+                ¿Puedes imaginar algo <span className="cyan-gelco">fundamental, innato y universal?</span>
+
                 </p>
 
-                <p className="text-xl">
-                    Algo <span className="cyan-gelco">lo suficientemente importante para implicar </span>a 193 países, traducirse a más de 300 idiomas e involucrar a más de 7 mil millones de personas.
-                </p>
-
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-4 w-14 h-14">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                </svg>
-
-                <p className="text-xl">
-                    Algo que te <span className="cyan-gelco">afecta no solo a ti,</span> sino también a todas las personas que conoces y quieres... ¡y a todas aquellas que ni siquiera conoces!
+                <p className="text-xl">    
+                    Algo <span className="cyan-gelco">tan vital</span> que reúne a 193 países, se traduce a más de 300 idiomas y afecta a más de 7 mil millones de personas.
                 </p>
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-4 w-14 h-14">
@@ -40,19 +37,75 @@ export default function Case1(){
                 </svg>
 
                 <p className="text-xl">
-                    Algo que implica que podamos desarrollar una <span className="cyan-gelco">vida en común digna, satisfactoria e igualitaria,</span> ¿lo imaginas?
+                    <span className="cyan-gelco">Algo que impacta no solo tu vida,</span> sino también la de todas las personas que conoces y amas... ¡e incluso aquellas que jamás has conocido!
+                </p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-4 w-14 h-14">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>
+
+                <p className="text-xl">
+                Algo que nos permite construir una <span className="cyan-gelco">vida en común digna, satisfactoria e igualitaria,</span> ¿puedes imaginarlo?
                 </p>
 
             </section>
 
-            <section className="flex flex-col items-center justify-center mx-auto mb-4 text-justify" style={{width: "770px"}}>
+            <section className="flex flex-col items-center justify-center mx-auto my-4 text-justify" style={{width: "770px"}}>
                 <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">¿Qué son los derechos humanos?</h1>
-                <p className="self-start mb-3">Observa el siguiente vídeo y descubre qué son los Derechos Humanos</p>
+                <p className="self-start mb-3">Mira este vídeo y descubre qué son los Derechos Humanos</p>
 
                 <video controls className="w-full my-2">
                     <source src="/videos/derechos.mp4" type="video/mp4"></source>
                 </video>
             </section>
+
+            <hr className="my-10 hr-gradient"></hr>
+
+            <section className="flex flex-col items-center justify-center mx-auto my-4 text-justify" style={{width: "800px"}}>
+                <h1 className="self-start text-2xl font-semibold cyan-gelco">¿Cuál es la importancia de los derechos humanos?</h1>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-6 w-14 h-14">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>
+
+
+                <p className="my-3 text-xl"><span className="font-semibold cyan-gelco">Los derechos humanos son universales e inalienables.</span> En todas partes del mundo, todas las personas tienen derecho a ellos. <span className="cyan-gelco">Nadie puede renunciar</span> voluntariamente a sus derechos. Y nadie puede arrebatárselos a otra persona.</p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-6 w-14 h-14">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>
+
+                <p className="my-3 text-xl"><span className="font-semibold cyan-gelco">Los derechos humanos son indivisibles.</span> Ya sean civiles, políticos, económicos, sociales o culturales, <span className="cyan-gelco">son inherentes a la dignidad de todas las personas.</span> Por consiguiente, todos comparten la misma condición como derechos. No hay derechos “pequeños”. En los derechos humanos no existen jerarquías.</p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-6 w-14 h-14">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>
+
+                <p className="my-3 text-xl"><span className="font-semibold cyan-gelco">Interdependencia e interrelación.</span> El cumplimiento de un derecho a menudo depende, total o parcialmente, del cumplimiento de otros derechos. Por ejemplo, el ejercicio efectivo del derecho a la salud puede depender del ejercicio efectivo del derecho a la educación o a la información.</p>
+
+                <div style={{width: "700px"}} className="p-4 my-5 border rounded border-cyan-600 divide-solid active:border-pink-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="self-start mb-1 size-14">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                    </svg>
+
+                    <p>
+                    La <span className="cyan-gelco">Declaración Universal de los Derechos Humanos y los diversos pactos internacionales</span> en este ámbito, te<span className="cyan-gelco"> reconocen ante el mundo como persona, respaldan tus derechos y defienden tus libertades,</span> sin importar tu género, raza, credo, nacionalidad o condición social. El solo hecho de ser persona <span className="cyan-gelco">te otorga a ti y a quienes te rodean, derechos y libertades fundamentales. </span>
+                    </p>
+                    <p className="my-2">Los Derechos Humanos <span className="cyan-gelco">son la base de los Objetivos de Desarrollo Sostenible de la Agenda 2030 de Naciones Unidas</span> para erradicar la pobreza, proteger el planeta y asegurar la prosperidad para todos.</p>
+                </div>
+            </section>
+
+        <section className="flex flex-col mx-auto my-4 text-justify" style={{width: "800px"}}>
+            <h1 className="self-start my-1 text-2xl font-semibold cyan-gelco">¿Cuáles son los derechos humanos?</h1>
+            <p className="my-2 text-xl">La Declaración Universal de los Derechos Humanos, proclamada por la Asamblea General de las Naciones Unidas en París el 10 de diciembre de 1948, <span className="cyan-gelco">es un documento que marca un hito en la historia.</span> Pero recordemos, ¿cuáles son en detalle los Derechos Humanos que existen? ¿y cómo se clasifican? <span className="cyan-gelco">Existen tres categorías:</span></p>
+            <DynamicCarousel/>
+        </section>
+
+        <section className="flex flex-col mx-auto my-4 text-justify" style={{width: "800px"}}>
+            <h1 className="self-start my-1 text-2xl font-semibold cyan-gelco">Actividades</h1>
+            <p className="text-xl">Pon en práctica lo aprendido, realizando las siguientes actividades</p>
+        </section>
+
         </>
     )
 }
