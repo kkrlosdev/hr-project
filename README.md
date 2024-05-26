@@ -1,5 +1,9 @@
 # Gelco Human Rights Project
 
+<div align="center">
+  <img src="https://i.imgur.com/j639j75.gif">
+</div>
+
 ## Descripción
 Los derechos humanos son esenciales para garantizar la dignidad, la libertad y la justicia para todos. Este proyecto tiene como objetivo promover la importancia de los derechos humanos a través de herramientas y recursos accesibles.
 
