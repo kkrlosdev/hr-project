@@ -53,6 +53,13 @@
   position: relative;
 }
 
+.text-gradient{
+  background: #ccc;
+  background: linear-gradient(to right, rgb(24, 5, 197), rgb(243, 51, 121));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 .hr-gradient{
   height: 5px;
   border: none;
