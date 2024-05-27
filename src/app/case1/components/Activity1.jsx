@@ -15,11 +15,11 @@ export function Activity1(){
                 <p className="my-1 text-xl">Marca <span className="font-semibold text-green-600">verdadero</span> o <span className="font-semibold text-red-600">falso</span> según corresponda</p>
                 <p className="">Los derechos humanos se clasifican en 2 categorías</p>
                 <div className="w-full text-white">
-                    <div className="p-3 my-2 bg-green-600 rounded">
+                    <div className="p-3 my-2 rounded bg-cyan-gelco">
                         <input type="radio" value="value1" id="opcion1" checked={selectedValue === 'value1'} onChange={handleChange}/>
                         <label htmlFor="opcion1" className="ml-2">Verdadero</label>
                     </div>
-                    <div className="p-3 my-2 bg-red-600 rounded">
+                    <div className="p-3 my-2 rounded bg-cyan-gelco">
                         <input type="radio" value="value2" id="opcion2" checked={selectedValue === 'value2'} onChange={handleChange}/>
                         <label htmlFor="opcion2" className="ml-2">Falso</label>
                     </div>
