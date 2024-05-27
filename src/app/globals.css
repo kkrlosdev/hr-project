@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.SectionWelcomePage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .pink-gelco{
   color: rgb(197, 022, 087);
 }
