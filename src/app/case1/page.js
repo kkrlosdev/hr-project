@@ -1,6 +1,10 @@
 import { BackButton} from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
 import dynamic from 'next/dynamic';
+import Image from "next/image";
+import GestionDDHH from "@/app/assets/case1-image3.jpg"
+import { Activity1 } from "./components/Activity1";
+import ShimmerButton from "../components/magicui/shimmer-button";
 
 const DynamicCarousel = dynamic(() => import('@/app/components/Carousel'), { ssr: false });
 
@@ -94,17 +98,34 @@ export default function Case1(){
                 </div>
             </section>
 
+
+        <section className="flex flex-col items-center justify-center mx-auto my-4 text-justify" style={{width: "800px"}}>
+            <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">La gestión de los DDHH en Gelco</h1>
+            <p className="text-xl">El siguiente diagrama representa el ciclo de mejoramiento continuo de la gestión de los Derechos Humanos en Gelco:</p>
+            <Image src={GestionDDHH} alt="Ciclo de Gestión de los DDHH" className="my-3"/>
+        </section>
+
         <section className="flex flex-col mx-auto my-4 text-justify" style={{width: "800px"}}>
             <h1 className="self-start my-1 text-2xl font-semibold cyan-gelco">¿Cuáles son los derechos humanos?</h1>
             <p className="my-2 text-xl">La Declaración Universal de los Derechos Humanos, proclamada por la Asamblea General de las Naciones Unidas en París el 10 de diciembre de 1948, <span className="cyan-gelco">es un documento que marca un hito en la historia.</span> Pero recordemos, ¿cuáles son en detalle los Derechos Humanos que existen? ¿y cómo se clasifican? <span className="cyan-gelco">Existen tres categorías:</span></p>
             <DynamicCarousel/>
         </section>
 
-        <section className="flex flex-col mx-auto my-4 text-justify" style={{width: "800px"}}>
+        <section className="flex flex-col items-center mx-auto my-4 text-justify" style={{width: "800px"}}>
             <h1 className="self-start my-1 text-2xl font-semibold cyan-gelco">Actividades</h1>
-            <p className="text-xl">Pon en práctica lo aprendido, realizando las siguientes actividades</p>
-        </section>
+            <p className="self-start text-xl">Pon en práctica lo aprendido, realizando las siguientes actividades</p>
+            <div className="flex items-center justify-center my-2">
+                <ShimmerButton>Actividad 1</ShimmerButton>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="blue" className="mx-4 size-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
 
+                <ShimmerButton>Actividad 2</ShimmerButton>
+
+            </div>
+            <Activity1/>
+
+        </section>
         </>
     )
 }
