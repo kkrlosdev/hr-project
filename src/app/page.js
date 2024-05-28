@@ -3,6 +3,8 @@ import {Logo} from "./components/Logo"
 import UkIcon from "@/app/assets/uk-icon.png"
 import EsIcon from "@/app/assets/spain-icon.png"
 import TypingAnimation from "./components/magicui/typing-animation";
+import Link from "next/link";
+import ShimmerButton from "./components/magicui/shimmer-button";
 
 export default function Home() {
   return (
@@ -12,10 +14,10 @@ export default function Home() {
       <section className="SectionWelcomePage">
         <Logo />
         <h1 className="ml-6 text-4xl font-semibold text-gradient w-fit">DERECHOS <br/> HUMANOS</h1>
-        <div style={{ minHeight: '120px' }} className="flex flex-col justify-between">
-          <TypingAnimation text="¡Comencemos la formación!" duration={65} className="text-gradient"/>
+        <div style={{ minHeight: '140px' }} className="flex flex-col justify-between">
+          <TypingAnimation text="¡Comencemos la formación!" duration={45} className="text-gradient"/>
           <div className="flex justify-center mt-1">
-            <a href="/cases" className="text-2xl font-bold pink-gelco">Comenzar</a>
+            <Link href="/cases"><ShimmerButton background="rgb(197, 022, 087);" shimmerSize="2px" className="">Comenzar</ShimmerButton></Link>
           </div>
         </div>
 
