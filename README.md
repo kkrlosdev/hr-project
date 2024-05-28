@@ -1,7 +1,7 @@
 # Gelco Human Rights Project
 
 <div align="center">
-  <img src="https://i.imgur.com/j639j75.gif">
+  <img src="https://i.imgur.com/lS8MIUy.gif">
 </div>
 
 ## Descripción
