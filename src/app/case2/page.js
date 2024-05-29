@@ -1,8 +1,8 @@
 import { BackButton } from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
 import Image from "next/image"
-import Image1 from "@/app/assets/case2-image1.png"
-import Image2 from "@/app/assets/case2-imagen2.jpg"
+import Image1 from "@/app/assets/case2/case2-image1.png"
+import Image2 from "@/app/assets/case2/case2-imagen2.jpg"
 import { ImpactRelationTable } from "./components/Table"
 
 export default function Case1(){

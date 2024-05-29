@@ -3,8 +3,8 @@ import { useEffect } from "react"
 import { BackButton } from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
 import Image from "next/image"
-import Image1Case3 from "@/app/assets/case3-image1.jpg"
-import LineaEtica from "@/app/assets/case3-image2.jpg"
+import Image1Case3 from "@/app/assets/case3/case3-image1.jpg"
+import LineaEtica from "@/app/assets/case3/case3-image2.jpg"
 
 export default function Case1(){
     useEffect(() => {

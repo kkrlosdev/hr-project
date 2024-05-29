@@ -7,9 +7,9 @@ export function ImpactRelationTable() {
                 <table className="min-w-full bg-white border border-gray-200">
                     <thead className="bg-gray-200 border-b-2 border-gray-400">
                         <tr>
-                            <th className="px-4 py-2 border-2 border-gray-300">Relación con el riesgo / impacto</th>
-                            <th className="px-4 py-2 border-2 border-gray-300">Descripción</th>
-                            <th className="px-4 py-2 border-2 border-gray-300">Ejemplos</th>
+                            <th className="px-4 py-2 text-center border-2 border-gray-300">Relación con el riesgo/impacto</th>
+                            <th className="px-4 py-2 text-center border-2 border-gray-300">Descripción</th>
+                            <th className="px-4 py-2 text-center border-2 border-gray-300">Ejemplos</th>
                         </tr>
                     </thead>
                     <tbody>

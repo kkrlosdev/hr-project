@@ -3,7 +3,7 @@ import { BackButton} from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
 import dynamic from 'next/dynamic';
 import Image from "next/image";
-import GestionDDHH from "@/app/assets/case1-image3.jpg"
+import GestionDDHH from "@/app/assets/case1/case1-image3.jpg"
 import { Activity1 } from "./components/Activity1";
 import { Activity2 } from "./components/Activity2";
 import ShimmerButton from "../components/magicui/shimmer-button";
