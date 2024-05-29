@@ -125,7 +125,7 @@ export default function Case1(){
             <DynamicCarousel/>
         </section>
 
-        <section className="flex flex-col items-center mx-auto my-4 text-justify" style={{width: "800px"}}>
+        <section className="flex flex-col items-center mx-auto my-4 overflow-hidden text-justify" style={{width: "800px"}}>
             <h1 className="self-start my-1 text-2xl font-semibold cyan-gelco">Actividades</h1>
             <p className="self-start text-xl">Pon en práctica lo aprendido, realizando las siguientes actividades</p>
             <div className="flex items-center justify-center my-2">
