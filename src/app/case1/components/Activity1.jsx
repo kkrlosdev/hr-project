@@ -10,7 +10,7 @@ export function Activity1(){
     };
     return(
         <div className="relative flex flex-col items-center justify-center p-2 my-2 text-justify rounded-lg" style={{width: '600px', border: '1px solid rgb(000, 161, 200)'}}>
-            <BorderBeam className="-z-10" colorFrom="#00A1C8" colorTo="#342C7D" size="230" duration="10" borderWidth="1"/>
+            <BorderBeam className="-z-10" delay="1s" colorFrom="#00A1C8" colorTo="#342C7D" size="230" duration="10" borderWidth="1"/>
             <div className="p-2 rounded-md">
                 <p className="my-1 text-xl">Marca <span className="font-semibold text-green-600">verdadero</span> o <span className="font-semibold text-red-600">falso</span> según corresponda</p>
                 <p className="">Los derechos humanos se clasifican en 2 categorías</p>

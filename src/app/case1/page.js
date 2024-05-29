@@ -1,14 +1,28 @@
+"use client"
 import { BackButton} from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
 import dynamic from 'next/dynamic';
 import Image from "next/image";
 import GestionDDHH from "@/app/assets/case1-image3.jpg"
 import { Activity1 } from "./components/Activity1";
+import { Activity2 } from "./components/Activity2";
 import ShimmerButton from "../components/magicui/shimmer-button";
+import { useState } from "react";
 
 const DynamicCarousel = dynamic(() => import('@/app/components/Carousel'), { ssr: false });
 
+
 export default function Case1(){
+    const [visibleActivity, setVisibleActivity] = useState('activity1');
+
+    const showActivity1 = () => {
+        if (visibleActivity !== 'activity1') {
+            setVisibleActivity('activity1');
+        }}
+    const showActivity2 = () => {
+        if (visibleActivity !== 'activity2') {
+            setVisibleActivity('activity2');
+        }}
     return(
         <>
             <header className="headerPage1">
@@ -115,15 +129,25 @@ export default function Case1(){
             <h1 className="self-start my-1 text-2xl font-semibold cyan-gelco">Actividades</h1>
             <p className="self-start text-xl">Pon en práctica lo aprendido, realizando las siguientes actividades</p>
             <div className="flex items-center justify-center my-2">
-                <ShimmerButton>Actividad 1</ShimmerButton>
+                <div id="activity1button" onClick={showActivity1}>
+                    <ShimmerButton>Actividad 1</ShimmerButton>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="blue" className="mx-4 size-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
 
-                <ShimmerButton>Actividad 2</ShimmerButton>
+                <div id="activity2button" onClick={showActivity2}>
+                    <ShimmerButton>Actividad 2</ShimmerButton>
+                </div>
 
             </div>
-            <Activity1/>
+            <div id="activity1" hidden={visibleActivity !== 'activity1'}>
+                <Activity1/>
+            </div>
+            <div id="activity2" hidden={visibleActivity !== 'activity2'}>
+                <Activity2/>
+            </div>
+
 
         </section>
         </>
