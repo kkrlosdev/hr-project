@@ -6,7 +6,7 @@ import Image from "next/image"
 import Image1Case3 from "@/app/assets/case3/case3-image1.jpg"
 import LineaEtica from "@/app/assets/case3/case3-image2.jpg"
 
-export default function Case1(){
+export default function Case3(){
     useEffect(() => {
         const Box1 = document.getElementById("DefAndFunc");
         const text1 = document.getElementById("text-1");

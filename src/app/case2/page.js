@@ -4,8 +4,9 @@ import Image from "next/image"
 import Image1 from "@/app/assets/case2/case2-image1.png"
 import Image2 from "@/app/assets/case2/case2-imagen2.jpg"
 import { ImpactRelationTable } from "./components/Table"
+import { Table2 } from "./components/Table2"
 
-export default function Case1(){
+export default function Case2(){
     return(
         <>
             <header className="headerPage2">
@@ -65,9 +66,9 @@ export default function Case1(){
 
                 <h1 className="self-start my-3 text-2xl font-semibold cyan-gelco">Tipos de impacto</h1>
                 <ul>
-                    <li className="my-1 text-xl list-item"><span className="font-semibold cyan-gelco">Potencial:</span> No sé si está ocurriendo, pero por las condiciones del entorno y/o mi tipo de actividad puede llegar a ocurrir (riesgos).</li>
-                    <li className="my-1 text-xl list-item"><span className="font-semibold cyan-gelco">Real:</span> Hay evidencia de que está ocurriendo.</li>
-                    <li className="my-1 text-xl list-item "><span className="font-semibold cyan-gelco">Percibido:</span> No hay evidencia de que pueda ocurrir pero mis grupos de interés perciben que sí.</li>
+                    <li className="my-1 text-xl list-item"><span className="cyan-gelco">Potencial:</span> No sé si está ocurriendo, pero por las condiciones del entorno y/o mi tipo de actividad puede llegar a ocurrir (riesgos).</li>
+                    <li className="my-1 text-xl list-item"><span className="cyan-gelco">Real:</span> Hay evidencia de que está ocurriendo.</li>
+                    <li className="my-1 text-xl list-item "><span className="cyan-gelco">Percibido:</span> No hay evidencia de que pueda ocurrir pero mis grupos de interés perciben que sí.</li>
                 </ul>
 
                 <h1 className="self-start my-3 text-2xl font-semibold cyan-gelco">Tipo de relación con el impacto</h1>
@@ -77,7 +78,11 @@ export default function Case1(){
                     <ImpactRelationTable/>
                 </div>
 
-                <p className="self-start text-xl">Por cada riesgo identificado, se debe evaluar lo siguiente:</p>
+                <p className="self-start my-1 text-xl">Por cada riesgo identificado, se debe evaluar lo siguiente:</p>
+
+                <div className="my-1">
+                    <Table2/>
+                </div>
 
             </section>
 
