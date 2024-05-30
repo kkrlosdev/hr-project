@@ -3,8 +3,11 @@ import { InfoCase } from "../components/InfoCase"
 import Image from "next/image"
 import Image1 from "@/app/assets/case2/case2-image1.png"
 import Image2 from "@/app/assets/case2/case2-imagen2.jpg"
+import Image3 from "@/app/assets/case2/case2-image3.jpg"
 import { ImpactRelationTable } from "./components/Table"
 import { Table2 } from "./components/Table2"
+import { Table3 } from "./components/Table3"
+import { Table4 } from "./components/Table4"
 
 export default function Case2(){
     return(
@@ -39,8 +42,6 @@ export default function Case2(){
 
                 <p className="text-xl"><span className="cyan-gelco">Actuar con la Debida Diligencia </span>es el principal reto para las empresas en materia de Derechos Humanos</p>
 
-            <hr className="hr-gradient"/>
-
             </section>
 
             <section className="flex flex-col items-center mx-auto my-6 text-justify" style={{width: "770px"}}>
@@ -72,7 +73,7 @@ export default function Case2(){
                 </ul>
 
                 <h1 className="self-start my-3 text-2xl font-semibold cyan-gelco">Tipo de relación con el impacto</h1>
-                <p className="text-xl">La empresa puede correr el riesgo de producir o contribuir a que se produzca una consecuencia negativa sobre los derechos humanos por sus pro¬pias actividades, operaciones o bien por sus relaciones comerciales.  La siguiente tabla brinda orientación sobre la relación que la empresa puede tener con los derechos humanos:</p>
+                <p className="text-xl">La empresa puede correr el riesgo de producir o contribuir a que se produzca una consecuencia negativa sobre los derechos humanos por sus propias actividades, operaciones o bien por sus relaciones comerciales.  La siguiente tabla brinda orientación sobre la relación que la empresa puede tener con los derechos humanos:</p>
                 
                 <div className="my-1">
                     <ImpactRelationTable/>
@@ -80,10 +81,74 @@ export default function Case2(){
 
                 <p className="self-start my-1 text-xl">Por cada riesgo identificado, se debe evaluar lo siguiente:</p>
 
-                <div className="my-1">
+                <div className="my-2">
                     <Table2/>
                 </div>
 
+                <div className="my-2">
+                    <Table3/>
+                </div>
+
+                <div className="my-2">
+                    <Table4/>
+                </div>
+
+            </section>
+
+            <hr className="hr-gradient"/>
+
+            <section className="flex flex-col items-center mx-auto my-6 text-justify" style={{width: "800px"}}>
+                <h1 className="self-start text-2xl font-semibold cyan-gelco text-nowrap">¿Qué hacer si se presentan consecuencias negativas sobre los DDHH?</h1>
+                <h2 className="self-start my-2 text-xl font-semibold underline cyan-gelco">Políticas de actuación</h2>
+                <ol className="text-xl list-decimal">
+                    <li className="my-1 list-item">Gelco <span className="cyan-gelco">tomará acciones ante todos los casos de riesgo</span> en los que pueda involucrarse en violaciones graves de los derechos humanos, entendiendo el porqué y el cómo le afecta cada una de las situaciones, y así poder tomar las acciones pertinentes para cada caso. </li>
+                    <li className="my-1 list-item">Para todos los casos, Gelco <span className="cyan-gelco">interrumpirá o modificará la actividad que tiene una consecuencia negativa potencial o real</span> en DDHH a fin de prevenir o mitigar la probabilidad de que la consecuencia se produzca o vuelva a producirse, y en dado caso de que no sea suficiente, aplicará la reparación respectiva.</li>
+                    <li className="my-1 list-item">Si la empresa se encuentra en riesgo de involucrarse en la aparición de una consecuencia negativa únicamente por estar vinculada a sus operaciones, productos o servicios mediante una relación comercial, <span className="cyan-gelco">la empresa no está obligada a la reparación;</span> sin embargo, puede influenciar la misma.</li>
+                </ol>
+
+                <p className="my-3 text-xl">El siguiente esquema muestra la guía de actuación en los procesos de reparación y remedio, de acuerdo con el nivel de responsabilidad o vinculación de Gelco con situaciones de consecuencias negativas sobre los derechos humanos:</p>
+                <Image src={Image3} alt="Guía de actuación"/>
+
+                <h1 className="self-start my-1 text-xl font-semibold underline cyan-gelco">Pasos para seguir</h1>
+                <ol className="list-decimal">
+                    <li className="my-1 text-xl list-item">Establecer un orden de prioridad de atención, tomando en cuenta:
+                        <ol className="pl-2 list-alpha">
+                            <li className="pl-1 my-2 list-item"><span className="cyan-gelco">El alcance, la escala y el carácter irremediable</span> para evaluar la gravedad de las consecuencias negativas; es decir, desde las que causan los daños más graves a la población y pueden convertirse en irremediables si no se les brinda una respuesta temprana, a aquellas no tan urgentes.</li>
+                            <li className="pl-1 my-2 list-item">Que si una consecuencia negativa potencial es grave debe tener <span className="cyan-gelco">carácter prioritario,</span> sea cual sea la probabilidad de que ocurra.</li>
+                            <li className="pl-1 my-2 list-item"><span className="cyan-gelco">Prestar atención especial</span> a las personas pertenecientes a grupos vulnerables que puedan padecer las consecuencias negativas más graves sobre los derechos humanos.</li>
+                        </ol>
+                    </li>
+                    <li className="my-1 text-xl list-item">Definir las acciones de reparación a implementar, que pueden ser:
+                        <ol className="pl-2 list-alpha">
+                            <li className="pl-1 my-2 list-item"><span className="cyan-gelco">Restitución:</span> destinadas al restablecimiento del derecho, tales como: retorno a la residencia, devolución de bienes, reintegración al empleo, etc</li>
+                            <li className="pl-1 my-2 list-item"><span className="cyan-gelco">Indemnización:</span> comprende el daño material, físico y moral.</li>
+                            <li className="pl-1 my-2 list-item"><span className="cyan-gelco">Rehabilitación:</span> entre otras, atención médica, psicológica, servicios sociales y legales, etc.</li>
+                            <li className="pl-1 my-2 list-item"><span className="cyan-gelco">Satisfacción:</span> entre ellas se encuentran la verificación de los hechos, derecho a la verdad, actos públicos de desagravios, sanciones contra los responsables; conmemoraciones, etc.</li>
+                            <li className="pl-1 my-2 list-item"><span className="cyan-gelco">Garantía de no repetición:</span> pretenden asegurar que las víctimas no vuelvan a ser objeto de violaciones, para lo cual se deben adoptar, por ejemplo, formación, reformas a procedimientos, mecanismos de prevención y vigilancia, etc.</li>
+                        </ol>
+                    </li>
+                    <p className="text-xl">Cuando la empresa lo considere necesario, <span className="cyan-gelco">acudirá a un asesor experto en el tema,</span> para definir el tratamiento debido.</p>
+                    <li className="my-2 text-xl list-item"><span className="cyan-gelco">Dar a conocer las medidas a implementar</span> al titular del derecho, a través del canal de denuncia correspondiente y los mecanismos judiciales disponibles para su caso.</li>
+                    <li className="my-2 text-xl list-item"><span className="cyan-gelco">Implementar</span> las medidas de reparación/remediación.</li>
+                    <li className="my-2 text-xl list-item"><span className="cyan-gelco">Evaluar la satisfacción</span> del titular del derecho con las medidas tomadas.</li>
+                    <li className="my-2 text-xl list-item">Cerrar el caso.</li>
+                </ol>
+            </section>
+
+            <section className="flex flex-col items-center mx-auto my-6 text-justify" style={{width: "800px"}}>
+                <h1 className="self-start text-2xl font-semibold cyan-gelco">Seguimiento de la implementación y los resultados</h1>
+                <p className="text-xl">Gelco monitorea y hace seguimiento de la implementación y de la eficacia de los compromisos internos, actividades y objetivos de la empresa en relación con la debida diligencia mediante los siguientes mecanismos, entre otros:</p>
+                <ul className="text-xl list-disc">
+                    <li className="my-2">Revisiones periódicas e informes de gestión.</li>
+                    <li className="my-2">Auditorías internas o externas.</li>
+                    <li className="my-2">Encuestas y entrevistas con grupos de interés prioritarios.</li>
+                    <li className="my-2">Evaluaciones periódicas de las relaciones y/o vínculos comerciales.</li>
+                    <li className="my-2 ">Reevaluación de los impactos.</li>
+                </ul>
+                <h1 className="self-start text-2xl font-semibold cyan-gelco">Comunicación de los impactos</h1>
+                <p className="my-1 text-xl">La comunicación a nuestros grupos de interés de la información relevante acerca de las políticas, procesos y actividades de debida diligencia llevadas a cabo para identificar y abordar los impactos negativos reales o potenciales en DDHH se hará a través de informes anuales de sostenibilidad o de responsabilidad corporativa de la empresa u otras formas adecuadas de divulgación.</p>
+                <p className="my-1 text-xl">En cuanto a los impactos sobre los derechos humanos causados por la empresa o a los que contribuya, Gelco comunicará a los titulares de derechos afectados o potencialmente afectados la información relevante de manera oportuna y culturalmente sensible y accesible. </p>
+                <p className="my-1 text-xl">En todos los casos, se respetará la confidencialidad comercial y otras consideraciones sobre competencia o seguridad.</p>
             </section>
 
         </>

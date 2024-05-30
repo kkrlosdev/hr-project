@@ -67,6 +67,10 @@
   -webkit-background-clip: text;
 }
 
+.list-alpha{
+  list-style: lower-alpha;
+}
+
 .hr-gradient{
   height: 5px;
   border: none;
