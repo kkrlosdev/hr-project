@@ -5,6 +5,7 @@ import { InfoCase } from "../components/InfoCase"
 import Image from "next/image"
 import Image1Case3 from "@/app/assets/case3/case3-image1.jpg"
 import LineaEtica from "@/app/assets/case3/case3-image2.jpg"
+import Link from "next/link"
 
 export default function Case3(){
     useEffect(() => {
@@ -110,8 +111,7 @@ export default function Case3(){
 
             </section>
 
-        <hr className="my-10" style={{height: "5px", border: "none", backgroundImage: "linear-gradient(to right, rgb(052, 044, 125), rgb(197, 022, 087))"}}></hr>
-
+        <hr className="my-10 hr-gradient"></hr>
 
             <section className="flex flex-col items-center justify-center p-4 mx-auto mb-4 text-justify" style={{width: "790px"}}>
                 <h1 className="self-start text-2xl font-semibold cyan-gelco">Mecanismos de reclamación estatales</h1>
@@ -132,12 +132,11 @@ export default function Case3(){
                 </div>
             </section>
 
-        <hr className="my-10" style={{height: "5px", border: "none", backgroundImage: "linear-gradient(to right, rgb(052, 044, 125), rgb(197, 022, 087))"}}></hr>
+        <hr className="my-5 hr-gradient"></hr>
 
-        <section className="flex flex-col items-center justify-center mx-auto my-10 text-justify" style={{width: "750px"}}>
+        <section className="flex flex-col items-center justify-center mx-auto my-2 text-justify" style={{width: "750px"}}>
             <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">Mecanismos de reclamación a nivel operacional</h1>
             <p className="text-xl">Los mecanismos de reclamación a nivel operacional contribuyen a la responsabilidad de respetar los Derechos Humanos por parte de las empresas y retroalimentan el proceso de Debida Diligencia.</p>
-
             <div className="flex items-center w-full h-20 gap-4 my-4 rounded-md shadow-xl bg-cyan-gelco hover:cursor-pointer" id="DefAndFunc">
                 <button className="ml-4">
                     <svg id="Svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="size-6">
@@ -151,7 +150,6 @@ export default function Case3(){
                 <p className="text-xl">
                     Para atender denuncias por afectaciones a los Derechos Humanos, Gelco <span className="cyan-gelco">cuenta con mecanismos accesibles para la recepción de peticiones, quejas y reclamos,</span> que permiten atender y resolver de manera oportuna, transparente y eficaz las denuncias relacionadas con la operación. Estos mecanismos son supervisados por la alta dirección a través de informes periódicos de rendición de cuentas por su funcionamiento.  Además, <span className="cyan-gelco">se realizan valoraciones de la opinión de los usuarios</span> sobre los mecanismos de reclamación para su mantenimiento y mejora.
                 </p>
-
                 <p className="mt-1 text-xl">
                 Además de los mecanismos internos, Gelco reconoce la legitimidad de los mecanismos institucionales establecidos por la ley para que cualquier persona interponga quejas o denuncias en materia de Derechos Humanos, cuando considere que la operación lo impacta negativamente
                 </p>
@@ -169,10 +167,10 @@ export default function Case3(){
 
             <div hidden id="text-2" style={{width: "680px"}} className="p-4 border rounded">
                 <p className="text-xl">Los mecanismos de reclamación se deben caracterizar por ser:</p>
-                <ol className="ml-4 list-disc cyan-gelco">
-                    <li className="list-item">Oportunos</li>
-                    <li className="list-item">Transparentes</li>
-                    <li className="list-item">Eficaces</li>
+                <ol className="ml-4 list-disc">
+                    <li className="list-item"><span className="cyan-gelco">Oportunos</span></li>
+                    <li className="list-item"><span className="cyan-gelco">Transparentes</span></li>
+                    <li className="list-item"><span className="cyan-gelco">Eficaces</span></li>
                 </ol>
                 <p className="text-xl">Además, no se debe privar a ninguna persona de poder interponer quejas o denuncias en Materia de Derechos Humanos, cuando considere que la operación impacta negativamente.</p>
             </div>
@@ -181,12 +179,21 @@ export default function Case3(){
             <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">Línea ética</h1>
             <p className="text-xl">Es un mecanismo administrado por un tercero en el que cualquier persona interna o externa a la organización <span className="cyan-gelco">puede presentar quejas o denuncias</span> incluso anónimas, relacionadas con eventos de fraude/corrupción o conductas contrarias al código de ética, mediante los siguientes canales:</p>
             <Image src={LineaEtica} alt="Línea ética" width={800} height={300} className="my-4"/>
+            <p className="text-xl">Se puede acceder directamente a través de los enlaces indicados o, a través de nuestra página web <Link target="_blank" href="https://www.gelcointernational.com/contacto/" className="my-1 font-semibold underline cyan-gelco">gelcointernational.com</Link> en la sección Contáctenos &gt; Línea Ética &gt; Planta Barranquilla</p>
+            <p className="mt-2 text-xl">Los tipos de incidentes asociados con DDHH que se pueden reportar por este canal (entre otros temas relacionados relacionados con el manual de ética y transparencia) son:</p>
+            <ul className="p-5 mt-1 text-xl list-disc">
+                <li className="list-item">Violencia o amenaza</li>
+                <li className="list-item">Violación de derechos humanos, derechos laborales o privacidad de datos</li>
+                <li className="list-item">Discriminación o acoso</li>
+                <li className="list-item">Contaminación al ambiente</li>
+                <li className="list-item">Afectación a la salud de los trabajadores</li>
+            </ul>
         </div>
 
 
         </section>
 
-        <section className="flex flex-col items-center justify-center mx-auto my-10 text-justify" style={{width: "750px"}}>
+        <section className="flex flex-col items-center justify-center mx-auto my-1 text-justify" style={{width: "750px"}}>
             <h1 className="self-start text-2xl font-semibold cyan-gelco">Mecanismos de reclamación de Gelco</h1>
             <video controls className="w-full my-2">
                 <source src="/videos/derechos.mp4" type="video/mp4"></source>

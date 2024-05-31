@@ -4,6 +4,7 @@ import { InfoCase } from "../components/InfoCase"
 import dynamic from 'next/dynamic';
 import Image from "next/image";
 import GestionDDHH from "@/app/assets/case1/case1-image3.jpg"
+import Pasos from "@/app/assets/case1/case1-image4.jpg"
 import { Activity1 } from "./components/Activity1";
 import { Activity2 } from "./components/Activity2";
 import ShimmerButton from "../components/magicui/shimmer-button";
@@ -117,6 +118,17 @@ export default function Case1(){
             <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">La gestión de los DDHH en Gelco</h1>
             <p className="text-xl">El siguiente diagrama representa el ciclo de mejoramiento continuo de la gestión de los Derechos Humanos en Gelco:</p>
             <Image src={GestionDDHH} alt="Ciclo de Gestión de los DDHH" className="my-3"/>
+
+            <p className="my-4 text-xl">Los <i>Principios Rectores</i> sobre <i>Empresas y Derechos Humanos</i> establecen 3 pasos para que las empresas han de llevar a cabo para respetar los derechos humanos en sus actividades:</p>
+
+            <Image src={Pasos} alt="Pasos a seguir para respetar los DDHH" className="my-2"/>
+
+            <ol className="my-4 text-xl list-decimal">
+                <li className="my-1 list-item">La creación de una <span className="cyan-gelco">Política de Compromiso con los Derechos Humanos,</span> que sirva de base al proceso de integración del marco;</li>
+                <li className="my-1 list-item">La <span className="cyan-gelco">identificación, mitigación y prevención</span> de sus potenciales impactos sobre los derechos humanos, a través de un proceso de debida diligencia;</li>
+                <li className="my-1 list-item">El <span className="cyan-gelco">establecimiento de mecanismos de reclamación</span> a nivel operacional, para dar solución a los impactos generados y reparar a las víctimas.</li>
+            </ol>
+
         </section>
 
         <section className="flex flex-col mx-auto my-4 text-justify" style={{width: "800px"}}>
