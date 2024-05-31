@@ -32,7 +32,7 @@ export default function Cases(){
                 </section>
 
                 <section className="relative flex flex-col items-center">
-                    <h1 className="self-start font-semibold blue-gelco">Caso 2</h1>
+                    <h1 className="self-start font-semibold pink-gelco">Caso 2</h1>
                     <Link href="/case2">
                         <div className="my-3 text-xl font-semibold text-white transition-all duration-500 rounded w-72 h-72 bg-pink-gelco hover:scale-105">
                             <h1 className="m-3">Debida <br/> Diligencia</h1>
@@ -44,7 +44,7 @@ export default function Cases(){
                 
                 
                 <section className="flex flex-col items-center">
-                    <h1 className="self-start font-semibold blue-gelco">Caso 3</h1>
+                    <h1 className="self-start font-semibold cyan-gelco">Caso 3</h1>
                     <Link href="/case3">
                         <div className="my-3 text-xl font-semibold text-white transition-all duration-500 rounded w-72 h-72 bg-cyan-gelco hover:scale-105">
                             <h1 className="m-3">Remediación</h1>

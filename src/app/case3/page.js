@@ -179,7 +179,7 @@ export default function Case3(){
             <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">Línea ética</h1>
             <p className="text-xl">Es un mecanismo administrado por un tercero en el que cualquier persona interna o externa a la organización <span className="cyan-gelco">puede presentar quejas o denuncias</span> incluso anónimas, relacionadas con eventos de fraude/corrupción o conductas contrarias al código de ética, mediante los siguientes canales:</p>
             <Image src={LineaEtica} alt="Línea ética" width={800} height={300} className="my-4"/>
-            <p className="text-xl">Se puede acceder directamente a través de los enlaces indicados o, a través de nuestra página web <Link target="_blank" href="https://www.gelcointernational.com/contacto/" className="my-1 font-semibold underline cyan-gelco">gelcointernational.com</Link> en la sección Contáctenos &gt; Línea Ética &gt; Planta Barranquilla</p>
+            <p className="text-xl">Se puede acceder directamente a través de los enlaces indicados o, a través de nuestra página web <Link target="_blank" href="https://www.gelcointernational.com/contacto/" className="underline cyan-gelco">gelcointernational.com</Link> en la sección <span className="cyan-gelco">Contáctenos &gt; Línea Ética &gt; Planta Barranquilla</span></p>
             <p className="mt-2 text-xl">Los tipos de incidentes asociados con DDHH que se pueden reportar por este canal (entre otros temas relacionados relacionados con el manual de ética y transparencia) son:</p>
             <ul className="p-5 mt-1 text-xl list-disc">
                 <li className="list-item">Violencia o amenaza</li>
