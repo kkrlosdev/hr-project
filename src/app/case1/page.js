@@ -114,6 +114,13 @@ export default function Case1(){
             </section>
 
 
+        <section className="flex flex-col mx-auto my-4 text-justify" style={{width: "800px"}}>
+            <h1 className="self-start my-1 text-2xl font-semibold cyan-gelco">¿Cuáles son los derechos humanos?</h1>
+            <p className="my-2 text-xl">La Declaración Universal de los Derechos Humanos, proclamada por la Asamblea General de las Naciones Unidas en París el 10 de diciembre de 1948, <span className="cyan-gelco">es un documento que marca un hito en la historia.</span> Pero recordemos, ¿cuáles son en detalle los Derechos Humanos que existen? ¿y cómo se clasifican? <span className="cyan-gelco">Existen tres categorías:</span></p>
+            <DynamicCarousel/>
+        </section>
+
+
         <section className="flex flex-col items-center justify-center mx-auto my-4 text-justify" style={{width: "800px"}}>
             <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">La gestión de los DDHH en Gelco</h1>
             <p className="text-xl">El siguiente diagrama representa el ciclo de mejoramiento continuo de la gestión de los Derechos Humanos en Gelco:</p>
@@ -131,13 +138,7 @@ export default function Case1(){
 
         </section>
 
-        <section className="flex flex-col mx-auto my-4 text-justify" style={{width: "800px"}}>
-            <h1 className="self-start my-1 text-2xl font-semibold cyan-gelco">¿Cuáles son los derechos humanos?</h1>
-            <p className="my-2 text-xl">La Declaración Universal de los Derechos Humanos, proclamada por la Asamblea General de las Naciones Unidas en París el 10 de diciembre de 1948, <span className="cyan-gelco">es un documento que marca un hito en la historia.</span> Pero recordemos, ¿cuáles son en detalle los Derechos Humanos que existen? ¿y cómo se clasifican? <span className="cyan-gelco">Existen tres categorías:</span></p>
-            <DynamicCarousel/>
-        </section>
-
-        <section className="flex flex-col items-center mx-auto my-4 overflow-hidden text-justify" style={{width: "800px"}}>
+        <section className="flex flex-col items-center mx-auto my-6 overflow-hidden text-justify" style={{width: "800px"}}>
             <h1 className="self-start my-1 text-2xl font-semibold cyan-gelco">Actividades</h1>
             <p className="self-start text-xl">Pon en práctica lo aprendido, realizando las siguientes actividades</p>
             <div className="flex items-center justify-center my-2">

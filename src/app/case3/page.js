@@ -5,6 +5,8 @@ import { InfoCase } from "../components/InfoCase"
 import Image from "next/image"
 import Image1Case3 from "@/app/assets/case3/case3-image1.jpg"
 import LineaEtica from "@/app/assets/case3/case3-image2.jpg"
+import Cocola from "@/app/assets/case3/ContactoCocola.png"
+import LineaVerde from "@/app/assets/case3/LineaVerde.png"
 import Link from "next/link"
 
 export default function Case3(){
@@ -168,9 +170,9 @@ export default function Case3(){
             <div hidden id="text-2" style={{width: "680px"}} className="p-4 border rounded">
                 <p className="text-xl">Los mecanismos de reclamación se deben caracterizar por ser:</p>
                 <ol className="ml-4 list-disc">
-                    <li className="list-item"><span className="cyan-gelco">Oportunos</span></li>
-                    <li className="list-item"><span className="cyan-gelco">Transparentes</span></li>
-                    <li className="list-item"><span className="cyan-gelco">Eficaces</span></li>
+                    <li className="text-xl list-item"><span className="cyan-gelco">Oportunos</span></li>
+                    <li className="text-xl list-item"><span className="cyan-gelco">Transparentes</span></li>
+                    <li className="text-xl list-item"><span className="cyan-gelco">Eficaces</span></li>
                 </ol>
                 <p className="text-xl">Además, no se debe privar a ninguna persona de poder interponer quejas o denuncias en Materia de Derechos Humanos, cuando considere que la operación impacta negativamente.</p>
             </div>
@@ -188,6 +190,28 @@ export default function Case3(){
                 <li className="list-item">Contaminación al ambiente</li>
                 <li className="list-item">Afectación a la salud de los trabajadores</li>
             </ul>
+
+
+            <div>
+                <h2 className="self-start text-2xl font-semibold cyan-gelco">Comité de convivencia laboral (COCOLA)</h2>
+                <p className="my-1 text-xl">
+                    Conjunto de personas, con representación de la empresa y de los trabajadores, que <span className="cyan-gelco">se encargan de recibir y dar trámite a las quejas presentadas</span> en las que se describan situaciones que puedan constituir acoso laboral, de acuerdo con lo definido en la Ley 1010 de 2006.
+                </p>
+                <p className="my-1 text-xl">
+                    Por este mecanismo <span className="cyan-gelco">no se aceptan quejas o denuncias anónimas.</span> Toda queja al comité de convivencia deberá presentarse por escrito, a través del formato SS-RG-30, el cual puede ser solicitado en medio impreso a cualquier miembro del comité o diligenciarse en formato electrónico, al cual se puede acceder a través del siguiente enlace o código QR:
+                </p>
+                <Image src={Cocola} alt="Contacto Cocola" className="ml-10"/>
+                <p className="my-1 text-xl">
+                La queja debe presentarse en un plazo <span className="cyan-gelco">no superior a los seis (6) meses</span> después de que hayan ocurrido los hechos y debe indicarse claramente la fecha de los eventos, motivo de la queja y suministrar evidencias siempre que sea posible.  Toda la información suministrada y la que se derive del tratamiento del caso será tratada de manera confidencial por el COCOLA, con conocimiento de Gestión Humana y la Gerencia de Operaciones.
+                </p>
+            </div>
+            <div>
+                <h2 className="self-start my-2 text-2xl font-semibold cyan-gelco">Línea verde</h2>
+                <p className="text-xl">
+                    A través de esta serie de mecanismos se pueden enviar preguntas, quejas, reclamos o solicitudes relacionadas con el desempeño ambiental de la empresa:
+                </p>
+                <Image src={LineaVerde} alt="Línea Verde" className="my-2 ml-8"/>
+            </div>
         </div>
 
 
