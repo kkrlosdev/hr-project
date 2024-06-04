@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import Image from "next/image";
 import GestionDDHH from "@/app/assets/case1/case1-image3.jpg"
 import Pasos from "@/app/assets/case1/case1-image4.jpg"
+import Pilares from "@/app/assets/case1/pilares.png"
 import { Activity1 } from "./components/Activity1";
 import { Activity2 } from "./components/Activity2";
 import ShimmerButton from "../components/magicui/shimmer-button";
@@ -160,8 +161,15 @@ export default function Case1(){
             <div id="activity2" hidden={visibleActivity !== 'activity2'}>
                 <Activity2/>
             </div>
+        </section>
 
-
+        <section className="flex flex-col items-center mx-auto my-6 overflow-hidden text-justify" style={{width: "800px"}}>
+            <h1 className="self-start text-2xl font-semibold cyan-gelco">Principios rectores sobre las empresas y derechos humanos</h1>
+            <p className="my-1 text-xl">Los Principios Rectores sobre Empresas y Derechos Humanos <span className="cyan-gelco">se aprobaron en el año 2011.</span>  Estos principios establecen que la responsabilidad empresarial de respetar los derechos humanos se aplica a
+                <span className="cyan-gelco"> cualquier tipo de entidad,</span> independientemente de su tamaño, sector o contexto operacional. Y también especifica que las empresas han de cumplir todas las leyes aplicables y respetar los derechos humanos, dondequiera que operen.
+            </p>
+            <p className="my-2 text-xl">Los Principios Rectores sobre las Empresas y los Derechos Humanos de las Naciones Unidas (PRNU) de 2011, también conocidos como Principios Rectores, son un instrumento internacional que <span className="cyan-gelco">está compuesto por 3 pilares y 31 principios.</span></p>
+            <Image src={Pilares} alt="Nothing" className="my-1"/>
         </section>
         </>
     )

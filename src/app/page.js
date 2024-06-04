@@ -13,7 +13,7 @@ export default function Home() {
 
       <section className="SectionWelcomePage">
         <Logo />
-        <h1 className="ml-6 text-4xl font-semibold text-gradient w-fit">DERECHOS <br/> HUMANOS</h1>
+        <h1 className="ml-6 text-4xl font-semibold blue-gelco w-fit">DERECHOS <span className="block mt-0">HUMANOS</span></h1>
         <div style={{ minHeight: '140px' }} className="flex flex-col justify-between">
           <TypingAnimation text="¡Comencemos la formación!" duration={45} className="text-gradient"/>
           <div className="flex justify-center mt-1">
