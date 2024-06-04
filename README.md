@@ -12,5 +12,3 @@ Este proyecto se encuentra actualmente en desarrollo. Estamos trabajando arduame
 
 ## Tech Stack 🌐
 <img align="center" src="https://skillicons.dev/icons?i=nextjs"/> <img align="center" src="https://skillicons.dev/icons?i=react"/> <img align="center" src="https://skillicons.dev/icons?i=tailwind"/>
-
-¡Gracias por tu interés en el Gelco Human Rights Project!
