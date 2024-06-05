@@ -1,6 +1,7 @@
 "use client"
 import { BackButton} from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
+import { Footer } from "@/app/components/Footer"
 import dynamic from 'next/dynamic';
 import Image from "next/image";
 import GestionDDHH from "@/app/assets/case1/case1-image3.jpg"
@@ -171,6 +172,9 @@ export default function Case1(){
             <p className="my-2 text-xl">Los Principios Rectores sobre las Empresas y los Derechos Humanos de las Naciones Unidas (PRNU) de 2011, también conocidos como Principios Rectores, son un instrumento internacional que <span className="cyan-gelco">está compuesto por 3 pilares y 31 principios.</span></p>
             <Image src={Pilares} alt="Nothing" className="my-1"/>
         </section>
+
+        <Footer/>
+
         </>
     )
 }

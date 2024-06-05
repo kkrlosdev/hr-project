@@ -8,6 +8,7 @@ import LineaEtica from "@/app/assets/case3/case3-image2.jpg"
 import Cocola from "@/app/assets/case3/ContactoCocola.png"
 import LineaVerde from "@/app/assets/case3/LineaVerde.png"
 import Link from "next/link"
+import { Footer } from "../components/Footer"
 
 export default function Case3(){
     useEffect(() => {
@@ -217,12 +218,15 @@ export default function Case3(){
 
         </section>
 
-        <section className="flex flex-col items-center justify-center mx-auto my-1 text-justify" style={{width: "750px"}}>
+        <section className="flex flex-col items-center justify-center mx-auto my-4 text-justify" style={{width: "750px"}}>
             <h1 className="self-start text-2xl font-semibold cyan-gelco">Mecanismos de reclamación de Gelco</h1>
             <video controls className="w-full my-2">
                 <source src="/videos/derechos.mp4" type="video/mp4"></source>
             </video>
         </section>
+
+        <Footer/>
+
         </>
     )
 }

@@ -1,5 +1,6 @@
 import { BackButton } from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
+import { Footer } from "@/app/components/Footer"
 import Image from "next/image"
 import Image1 from "@/app/assets/case2/case2-image1.png"
 import Image2 from "@/app/assets/case2/case2-imagen2.jpg"
@@ -150,6 +151,9 @@ export default function Case2(){
                 <p className="my-1 text-xl">En cuanto a los impactos sobre los derechos humanos causados por la empresa o a los que contribuya, Gelco comunicará a los titulares de derechos afectados o potencialmente afectados la información relevante de manera oportuna y culturalmente sensible y accesible. </p>
                 <p className="my-1 text-xl">En todos los casos, se respetará la confidencialidad comercial y otras consideraciones sobre competencia o seguridad.</p>
             </section>
+
+
+        <Footer/>
 
         </>
     )
