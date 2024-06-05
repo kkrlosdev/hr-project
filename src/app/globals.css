@@ -77,8 +77,8 @@
   background-image: linear-gradient(to right, rgb(052, 044, 125), rgb(197, 022, 087));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.bordespagina {
+  border-width: 0 5.5px;
+  border-color: rgb(52, 44, 125);
+  border-style: solid;
 }

@@ -28,6 +28,7 @@ export default function Case1(){
         }}
     return(
         <>
+        <main className="bordespagina">
             <header className="headerPage1">
                 <BackButton/>
                 <InfoCase subtitle={"Conociendo los derechos humanos"}/>             
@@ -174,6 +175,7 @@ export default function Case1(){
         </section>
 
         <Footer/>
+        </main>
 
         </>
     )
