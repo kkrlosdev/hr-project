@@ -9,6 +9,7 @@ import Cocola from "@/app/assets/case3/ContactoCocola.png"
 import LineaVerde from "@/app/assets/case3/LineaVerde.png"
 import Link from "next/link"
 import { Footer } from "../components/Footer"
+import { Header } from "../components/Header"
 import { Activity1 } from "./components/activities/Activity1"
 import { Activity2 } from "./components/activities/Activity2"
 import ShimmerButton from "../components/magicui/shimmer-button"
@@ -71,6 +72,7 @@ export default function Case3(){
         <>
             <main className="bordespagina">
                 <header className="headerPage3">
+                    <Header/>
                     <BackButton/>
                     <InfoCase subtitle={"Remediación"}/>
                 </header>

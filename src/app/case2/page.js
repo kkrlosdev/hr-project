@@ -2,6 +2,7 @@
 import { BackButton } from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
 import { Footer } from "@/app/components/Footer"
+import { Header } from "../components/Header"
 import Image from "next/image"
 import Image1 from "@/app/assets/case2/case2-image1.png"
 import Image2 from "@/app/assets/case2/case2-imagen2.jpg"
@@ -30,6 +31,7 @@ export default function Case2(){
         <>
             <main className="bordespagina">
                 <header className="headerPage2">
+                    <Header/>
                     <BackButton/>
                     <InfoCase subtitle={"Debida Diligencia"}/>
                 </header>

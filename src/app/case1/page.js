@@ -2,6 +2,7 @@
 import { BackButton} from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
 import { Footer } from "@/app/components/Footer"
+import { Header } from "../components/Header"
 import dynamic from 'next/dynamic';
 import Image from "next/image";
 import GestionDDHH from "@/app/assets/case1/case1-image3.jpg"
@@ -31,6 +32,7 @@ export default function Case1(){
         <main className="bordespagina">
             <header className="headerPage1">
                 <BackButton/>
+                <Header/>
                 <InfoCase subtitle={"Conociendo los derechos humanos"}/>             
             </header>
 
