@@ -5,7 +5,8 @@ export function Footer(){
     return(
         <>
             <div className="flex items-center justify-center w-full h-10 text-white bg-blue-gelco">
-                <Link href="https://github.com/kkrlosdev/hr-project" target="_blank">
+                2024.
+                <Link href="https://github.com/kkrlosdev/hr-project" target="_blank" className="ml-3">
                     <Github/>
                 </Link>
             </div>
