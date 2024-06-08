@@ -12,9 +12,10 @@ import { Table2 } from "./components/Table2"
 import { Table3 } from "./components/Table3"
 import { Table4 } from "./components/Table4"
 import ShimmerButton from "../components/magicui/shimmer-button"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Activity1 } from "./components/activities/Activity1"
 import { Activity2 } from "./components/activities/Activity2"
+import { ClipLoader } from "react-spinners"
 
 export default function Case2(){
     const [visibleActivity, setVisibleActivity] = useState('activity1');
@@ -27,8 +28,21 @@ export default function Case2(){
         if (visibleActivity !== 'activity2') {
             setVisibleActivity('activity2');
         }}
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+        setIsLoading(false);
+        }, 700);
+    }, []);
     return(
         <>
+        {isLoading?(
+            <div className="full-screen-loader">
+                <ClipLoader size={100} color={"#1805C5"} loading={isLoading} />
+            </div>
+        ):(
+            <>
             <main className="bordespagina">
                 <header className="headerPage2">
                     <Header/>
@@ -199,6 +213,8 @@ export default function Case2(){
 
             </main>
 
+        </>
+        )}
         </>
     )
 }

@@ -1,9 +1,25 @@
+"use client"
 import { BackButton } from "@/app/components/BackButton"
 import Link from "next/link"
+import { ClipLoader } from "react-spinners"
+import { useEffect, useState } from "react"
 
 export default function Case1Resources(){
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+        setIsLoading(false);
+        }, 700);
+    }, []);
     return(
         <>
+        {isLoading?(
+            <div className="full-screen-loader">
+                <ClipLoader size={100} color={"#1805C5"} loading={isLoading} />
+            </div>
+        ):(
+            <>
             <video muted autoPlay loop className="absolute top-0 left-0 object-cover w-full h-full -z-10">
                     <source src="/videos/ResourcesBackground.mp4" type="video/mp4"></source>
                 </video>
@@ -51,6 +67,8 @@ export default function Case1Resources(){
                     </Link>
                 </section>
             </main>
+        </>
+        )}
         </>
     )
 }

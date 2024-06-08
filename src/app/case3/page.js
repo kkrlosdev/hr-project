@@ -13,6 +13,7 @@ import { Header } from "../components/Header"
 import { Activity1 } from "./components/activities/Activity1"
 import { Activity2 } from "./components/activities/Activity2"
 import ShimmerButton from "../components/magicui/shimmer-button"
+import { ClipLoader } from "react-spinners"
 
 export default function Case3(){
     useEffect(() => {
@@ -68,8 +69,21 @@ export default function Case3(){
             setVisibleActivity('activity2');
         }}
 
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+        setIsLoading(false);
+        }, 700);
+        }, []);
     return(
         <>
+        {isLoading?(
+            <div className="full-screen-loader">
+                <ClipLoader size={100} color={"#1805C5"} loading={isLoading} />
+            </div>
+        ):(
+            <>
             <main className="bordespagina">
                 <header className="headerPage3">
                     <Header/>
@@ -269,6 +283,8 @@ export default function Case3(){
 
             <Footer/>
             </main>
+        </>
+        )}
         </>
     )
 }

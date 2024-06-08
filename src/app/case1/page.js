@@ -11,7 +11,8 @@ import Pilares from "@/app/assets/case1/pilares.png"
 import { Activity1 } from "./components/Activity1";
 import { Activity2 } from "./components/Activity2";
 import ShimmerButton from "../components/magicui/shimmer-button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { ClipLoader } from "react-spinners"
 
 const DynamicCarousel = dynamic(() => import('@/app/components/Carousel'), { ssr: false });
 
@@ -27,8 +28,21 @@ export default function Case1(){
         if (visibleActivity !== 'activity2') {
             setVisibleActivity('activity2');
         }}
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+        setIsLoading(false);
+        }, 700);
+    }, []);
     return(
         <>
+        {isLoading ? (
+            <div className="full-screen-loader">
+                <ClipLoader size={100} color={"#1805C5"} loading={isLoading} />
+            </div>
+        ):(
+            <>
         <main className="bordespagina">
             <header className="headerPage1">
                 <BackButton/>
@@ -179,6 +193,8 @@ export default function Case1(){
         <Footer/>
         </main>
 
+        </>
+        )}
         </>
     )
 }

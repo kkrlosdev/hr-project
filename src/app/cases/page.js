@@ -6,11 +6,26 @@ import derechos_humanos_card from "@/app/assets/derechos_humanos.svg"
 import debida_diligencia_card from "@/app/assets/debida_diligencia.svg"
 import remediacion_card from "@/app/assets/remediacion.png"
 import Link from "next/link"
+import { useState, useEffect } from "react"
+import { ClipLoader } from "react-spinners"
 
 export default function Cases(){
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+        setIsLoading(false);
+        }, 700);
+    }, []);
 
     return (
         <>
+        {isLoading ? (
+            <div className="full-screen-loader">
+                <ClipLoader size={100} color={"#1805C5"} loading={isLoading} />
+            </div>
+        ):(
+            <>
             <header>
                 <Logo />
                 <h1 className="ml-6 text-3xl blue-gelco">DERECHOS <span className="block mt-0">HUMANOS</span> </h1>
@@ -58,6 +73,8 @@ export default function Cases(){
                     <KnowMoreButton color="bg-cyan-gelco" href="./case3/resources"/>
                 </section>
             </main>
+        </>
+        )}
         </>
     )
 }
