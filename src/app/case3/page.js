@@ -14,49 +14,19 @@ import { Activity1 } from "./components/activities/Activity1"
 import { Activity2 } from "./components/activities/Activity2"
 import ShimmerButton from "../components/magicui/shimmer-button"
 import { ClipLoader } from "react-spinners"
+import { SectionComponent } from "../components/SectionComponent"
 
 export default function Case3(){
-    useEffect(() => {
-        const Box1 = document.getElementById("DefAndFunc");
-        const text1 = document.getElementById("text-1");
-
-        const toggleVisibility = () => {
-            if (text1.hasAttribute("hidden")) {
-                text1.removeAttribute("hidden");
-            } else {
-                text1.setAttribute("hidden", "");
-            }
-        };
-        if (Box1) {
-            Box1.addEventListener("click", toggleVisibility);
-        }
-        return () => {
-            if (Box1) {
-                Box1.removeEventListener("click", toggleVisibility);
-            }
-        };
-    }, []);
-
-    useEffect(() => {
-        const Box2 = document.getElementById("MainFeatures");
-        const text2 = document.getElementById("text-2");
-        
-        const toggleVisibility = () => {
-            if (text2.hasAttribute("hidden")) {
-                text2.removeAttribute("hidden");
-            } else {
-                text2.setAttribute("hidden", "");
-            }
-        };
-        if (Box2) {
-            Box2.addEventListener("click", toggleVisibility);
-        }
-        return () => {
-            if (Box2) {
-                Box2.removeEventListener("click", toggleVisibility);
-            }
-        };
-    }, []);
+    const [visibility, setVisibility] = useState({
+        text1: false,
+        text2: false,
+    });
+    const handleToggleVisibility = (id) => {
+        setVisibility(prevState => ({
+            ...prevState,
+            [id]: !prevState[id]
+        }));
+    };
 
     const [visibleActivity, setVisibleActivity] = useState('activity1');
 
@@ -116,9 +86,8 @@ export default function Case3(){
                     <p className="mt-1 text-xl">Los Estados, por su parte, <span className="cyan-gelco">deben garantizar que los afectados tienen acceso a mecanismos de reparación judiciales y extrajudiciales.</span></p>
                 </section>
 
-                <section className="flex flex-col items-center justify-center mx-auto my-10 text-justify" style={{width: "770px"}}>
-                    <h1 className="self-start mt-10 mb-4 text-2xl font-semibold cyan-gelco">Los mecanismos de remediación</h1>
-                    <p className="text-xl">Estamos <span className="cyan-gelco">comprometidos a crear un ambiente de trabajo propio y de nuestros grupos de interés</span> que fomente la visibilización, el apoyo y la apertura de la comunicación hacia el respeto de los Derechos Humanos.  Cuando se hace necesario, buscamos significado y consulta con expertos externos, incluidos los críticos y líderes de pensamiento reconocidos en materia de derechos humanos</p>
+                <SectionComponent title="Los mecanismos de remediación">
+                    <p className="mt-3 text-xl">Estamos <span className="cyan-gelco">comprometidos a crear un ambiente de trabajo propio y de nuestros grupos de interés</span> que fomente la visibilización, el apoyo y la apertura de la comunicación hacia el respeto de los Derechos Humanos.  Cuando se hace necesario, buscamos significado y consulta con expertos externos, incluidos los críticos y líderes de pensamiento reconocidos en materia de derechos humanos</p>
 
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-4 w-14 h-14">
@@ -143,13 +112,11 @@ export default function Case3(){
                     <h1 className="self-start text-2xl font-semibold cyan-gelco">Características</h1>
                     <p className="my-2 text-xl">Los procedimientos de remediación <span className="cyan-gelco">deben ser imparciales, transparentes y efectivos</span> y estar <span className="cyan-gelco">protegidos contra toda forma de corrupción</span> o cualquier intento de influir en su resultado.</p>
 
-                </section>
+                </SectionComponent>
 
             <hr className="my-10 hr-gradient"></hr>
 
-                <section className="flex flex-col items-center justify-center p-4 mx-auto mb-4 text-justify" style={{width: "790px"}}>
-                    <h1 className="self-start text-2xl font-semibold cyan-gelco">Mecanismos de reclamación estatales</h1>
-
+                <SectionComponent title="Mecanismos de reclamación estatales">
                     <p className="mt-4 text-xl">El término de mecanismo de reclamaciones incluye cualquier proceso que permita <span className="cyan-gelco">plantear reclamaciones y reparar violaciones de los Derechos Humanos</span> relacionadas con actividades empresariales.</p>
                     <Image src={Image1Case3} alt="Hola" height={290} width={280}/>
                     <p className="my-2 text-xl">Estos mecanismos y la manera en que se puede acceder a ellos deben ser conocidos plenamente por los potenciales afectados. En caso contrario, el estado debe brindar asistencia para ello.</p>
@@ -164,33 +131,33 @@ export default function Case3(){
                             <span className="cyan-gelco"> El estado no debe levantar barreras que impidan llevar casos legítimos ante los tribunales.</span>
                         </p>
                     </div>
-                </section>
+                </SectionComponent>
 
             <hr className="my-5 hr-gradient"></hr>
 
             <section className="flex flex-col items-center justify-center mx-auto my-2 text-justify" style={{width: "750px"}}>
                 <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">Mecanismos de reclamación a nivel operacional</h1>
                 <p className="text-xl">Los mecanismos de reclamación a nivel operacional contribuyen a la responsabilidad de respetar los Derechos Humanos por parte de las empresas y retroalimentan el proceso de Debida Diligencia.</p>
-                <div className="flex items-center w-full h-20 gap-4 my-4 rounded-md shadow-xl bg-cyan-gelco hover:cursor-pointer" id="DefAndFunc">
+                
+                <div className="flex items-center w-full h-20 gap-4 my-4 rounded-lg shadow-xl bg-cyan-gelco hover:cursor-pointer" id="DefAndFunc" onClick={() => handleToggleVisibility('text1')}>
                     <button className="ml-4">
-                        <svg id="Svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="size-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="size-6">
                             <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clipRule="evenodd" />
                         </svg>
                     </button>
                     <p className="text-xl text-white">Definición y funciones</p>
                 </div>
 
-                <div hidden id="text-1" style={{width: "680px"}} className="p-4 border rounded">
+                <div id="text1" style={{width: "680px"}} className={`p-4 border rounded ${visibility.text1 ? '' : 'hidden'}`}>
                     <p className="text-xl">
                         Para atender denuncias por afectaciones a los Derechos Humanos, Gelco <span className="cyan-gelco">cuenta con mecanismos accesibles para la recepción de peticiones, quejas y reclamos,</span> que permiten atender y resolver de manera oportuna, transparente y eficaz las denuncias relacionadas con la operación. Estos mecanismos son supervisados por la alta dirección a través de informes periódicos de rendición de cuentas por su funcionamiento.  Además, <span className="cyan-gelco">se realizan valoraciones de la opinión de los usuarios</span> sobre los mecanismos de reclamación para su mantenimiento y mejora.
                     </p>
                     <p className="mt-1 text-xl">
                     Además de los mecanismos internos, Gelco reconoce la legitimidad de los mecanismos institucionales establecidos por la ley para que cualquier persona interponga quejas o denuncias en materia de Derechos Humanos, cuando considere que la operación lo impacta negativamente
                     </p>
-
                 </div>
 
-                <div className="flex items-center w-full h-20 gap-4 my-4 rounded-lg shadow-xl bg-cyan-gelco hover:cursor-pointer" id="MainFeatures">
+                <div className="flex items-center w-full h-20 gap-4 my-4 rounded-lg shadow-xl bg-cyan-gelco hover:cursor-pointer" id="MainFeatures" onClick={() => handleToggleVisibility('text2')}>
 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="ml-4 size-6">
                             <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clipRule="evenodd" />
@@ -199,7 +166,7 @@ export default function Case3(){
                     <p className="text-xl text-white">Características principales</p>
                 </div>
 
-                <div hidden id="text-2" style={{width: "680px"}} className="p-4 border rounded">
+                <div id="text2" style={{width: "680px"}} className={`p-4 border rounded ${visibility.text2 ? '' : 'hidden'}`}>
                     <p className="text-xl">Los mecanismos de reclamación se deben caracterizar por ser:</p>
                     <ol className="ml-4 list-disc">
                         <li className="text-xl list-item"><span className="cyan-gelco">Oportunos</span></li>
