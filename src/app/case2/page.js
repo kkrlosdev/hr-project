@@ -16,6 +16,7 @@ import { useState, useEffect } from "react"
 import { Activity1 } from "./components/activities/Activity1"
 import { Activity2 } from "./components/activities/Activity2"
 import { ClipLoader } from "react-spinners"
+import { SectionComponent } from "../components/SectionComponent"
 
 export default function Case2(){
     const [visibleActivity, setVisibleActivity] = useState('activity1');
@@ -92,9 +93,8 @@ export default function Case2(){
 
                 </section>
 
-                <section className="flex flex-col items-center mx-auto my-6 text-justify" style={{width: "800px"}}>
-                    <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">Identificación de los grupos de interés en DDHH</h1>
-                    <p className="text-xl">Para identificar los grupos de interés priorizados para DDHH, se identifican cuáles son  los  derechos  humanos que la empresa  está <span className="cyan-gelco">obligada a no violar, a proteger, a promover y a contribuir en su operación</span> y se asocian con los respectivos grupos de interés.  En el siguiente diagrama se muestran los grupos de interés con los que la empresa entra en relación por el tipo y alcance de su actividad:</p>
+                <SectionComponent title="Identificación de los grupos de interés en DDHH">
+                    <p className="mt-1 text-xl">Para identificar los grupos de interés priorizados para DDHH, se identifican cuáles son  los  derechos  humanos que la empresa  está <span className="cyan-gelco">obligada a no violar, a proteger, a promover y a contribuir en su operación</span> y se asocian con los respectivos grupos de interés.  En el siguiente diagrama se muestran los grupos de interés con los que la empresa entra en relación por el tipo y alcance de su actividad:</p>
                     <Image src={Image2} alt="Grupos de interés GELCO" className="my-3"/>
                     <p className="text-xl">La responsabilidad de Gelco de respetar los derechos humanos se aplica a todos los derechos humanos internacionalmente reconocidos, pues puede incidir directa o indirectamente en todos ellos.  De esta forma se reconoce que la empresa puede afectar los derechos humanos de sus empleados, contratistas, sus clientes, los proveedores y de quienes se relacionan durante toda la cadena de valor, así como comunidades y otras partes interesadas.</p>
 
@@ -125,13 +125,11 @@ export default function Case2(){
                     <div className="my-2">
                         <Table4/>
                     </div>
-
-                </section>
+                </SectionComponent>
 
                 <hr className="hr-gradient"/>
 
-                <section className="flex flex-col items-center mx-auto my-6 text-justify" style={{width: "800px"}}>
-                    <h1 className="self-start text-2xl font-semibold cyan-gelco text-nowrap">¿Qué hacer si se presentan consecuencias negativas sobre los DDHH?</h1>
+                <SectionComponent title="¿Qué hacer si se presentan consecuencias negativas sobre los DDHH?">
                     <h2 className="self-start my-2 text-xl font-semibold underline cyan-gelco">Políticas de actuación</h2>
                     <ol className="text-xl list-decimal">
                         <li className="my-1 list-item">Gelco <span className="cyan-gelco">tomará acciones ante todos los casos de riesgo</span> en los que pueda involucrarse en violaciones graves de los derechos humanos, entendiendo el porqué y el cómo le afecta cada una de las situaciones, y así poder tomar las acciones pertinentes para cada caso. </li>
@@ -166,10 +164,9 @@ export default function Case2(){
                         <li className="my-2 text-xl list-item"><span className="cyan-gelco">Evaluar la satisfacción</span> del titular del derecho con las medidas tomadas.</li>
                         <li className="my-2 text-xl list-item">Cerrar el caso.</li>
                     </ol>
-                </section>
+                </SectionComponent>
 
-                <section className="flex flex-col items-center mx-auto my-6 text-justify" style={{width: "800px"}}>
-                    <h1 className="self-start text-2xl font-semibold cyan-gelco">Seguimiento de la implementación y los resultados</h1>
+                <SectionComponent title="Seguimiento de la implementación y los resultados">
                     <p className="text-xl">Gelco monitorea y hace seguimiento de la implementación y de la eficacia de los compromisos internos, actividades y objetivos de la empresa en relación con la debida diligencia mediante los siguientes mecanismos, entre otros:</p>
                     <ul className="text-xl list-disc">
                         <li className="my-2">Revisiones periódicas e informes de gestión.</li>
@@ -182,7 +179,7 @@ export default function Case2(){
                     <p className="my-1 text-xl">La comunicación a nuestros grupos de interés de la información relevante acerca de las políticas, procesos y actividades de debida diligencia llevadas a cabo para identificar y abordar los impactos negativos reales o potenciales en DDHH se hará a través de informes anuales de sostenibilidad o de responsabilidad corporativa de la empresa u otras formas adecuadas de divulgación.</p>
                     <p className="my-1 text-xl">En cuanto a los impactos sobre los derechos humanos causados por la empresa o a los que contribuya, Gelco comunicará a los titulares de derechos afectados o potencialmente afectados la información relevante de manera oportuna y culturalmente sensible y accesible. </p>
                     <p className="my-1 text-xl">En todos los casos, se respetará la confidencialidad comercial y otras consideraciones sobre competencia o seguridad.</p>
-                </section>
+                </SectionComponent>
 
 
             <section className="flex flex-col items-center mx-auto my-6 overflow-hidden text-justify" style={{width: "800px"}}>
