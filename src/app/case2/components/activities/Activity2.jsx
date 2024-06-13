@@ -60,7 +60,7 @@ export function Activity2() {
 
             {result && (
                 <div className={`my-2 p-2 text-center text-white rounded ${result === 'correcto' ? 'bg-green-600' : 'bg-red-600'}`}>
-                    {result === 'correcto' ? '¡Correcto! Esta afirmación es incorrecta' : 'Incorrecto. Esta afirmación es correcta'}
+                    {result === 'correcto' ? '¡Correcto! Esta afirmación es falsa' : 'Incorrecto. Esta afirmación es verdadera'}
                 </div>
             )}
         </div>
