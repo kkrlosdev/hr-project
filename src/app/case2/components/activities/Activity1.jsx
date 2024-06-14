@@ -40,7 +40,7 @@ export function Activity1(){
     return(
             <div className="relative flex flex-col items-center justify-center p-2 my-2 text-justify rounded-lg" style={{width: '600px', border: '1px solid rgb(000, 161, 200)'}}>
                 <BorderBeam className="-z-10" delay="1s" colorFrom="#00A1C8" colorTo="#342C7D" size="230" duration="10" borderWidth="1"/>
-                    <h3 className="text-xl">Selecciona la opción <span className="text-green-700">correcta</span></h3>
+                    <h3 className="text-xl">Selecciona la opción <span className="font-semibold text-green-700">correcta</span></h3>
                     <ol className="list-decimal">
                         <li className="">
                             <p className>Debida diligencia es un proceso de</p>
@@ -57,7 +57,7 @@ export function Activity1(){
                         <li>
                             <p>La remediación se da por</p>
                             <div className="flex justify-center">
-                                <select disabled={resultadosComprobados} name="" id="" defaultValue="perdidas" className={`px-3 py-1 mx-auto my-1 border ${resultados.pregunta1 === 'incorrecto' ? 'border-red-500' : 'border-blue-500'} rounded`} style={{width:'349px'}} onChange={(e) => handleChange(e, 'pregunta2')}>
+                                <select disabled={resultadosComprobados} name="" id="" defaultValue="perdidas" className={`px-3 py-1 mx-auto my-1 border ${resultados.pregunta2 === 'incorrecto' ? 'border-red-500' : 'border-blue-500'} rounded`} style={{width:'349px'}} onChange={(e) => handleChange(e, 'pregunta2')}>
                                     <option value="terceros">Terceros afectados por la actividad</option>
                                     <option value="perdidas">Pérdidas sociales</option>
                                     <option value="impacto">Impacto ambiental desmedido</option>
@@ -69,7 +69,7 @@ export function Activity1(){
                         <li>
                             <p>Las poblaciones afectadas</p>
                             <div className="flex justify-center">
-                                <select disabled={resultadosComprobados} name="" id="" defaultValue="grupodeinteres" className={`px-3 py-1 mx-auto my-1 ${resultados.pregunta1 === 'incorrecto' ? 'border-red-500' : 'border-blue-500'} border border-blue-500 rounded`} style={{width:'349px'}} onChange={(e) => handleChange(e, 'pregunta3')}>
+                                <select disabled={resultadosComprobados} name="" id="" defaultValue="grupodeinteres" className={`px-3 py-1 mx-auto my-1 ${resultados.pregunta3 === 'incorrecto' ? 'border-red-500' : 'border-blue-500'} border border-blue-500 rounded`} style={{width:'349px'}} onChange={(e) => handleChange(e, 'pregunta3')}>
                                     <option value="apoyadas">Deben ser apoyadas satisfactoriamente</option>
                                     <option value="grupodeinteres">Son un grupo de interés prioritario</option>
                                     <option value="nosonimportantes">No son tan importantes</option>
