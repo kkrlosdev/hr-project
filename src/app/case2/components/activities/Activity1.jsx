@@ -9,7 +9,7 @@ export function Activity1(){
     })
     const respuestasCorrectas = {
         pregunta1: 'respetar',
-        pregunta2: 'terceros',
+        pregunta2: 'identificar',
         pregunta3: 'apoyadas'
     };
     const [resultados, setResultados] = useState({
@@ -55,12 +55,12 @@ export function Activity1(){
                             </div>
                         </li>
                         <li>
-                            <p>La remediación se da por</p>
+                            <p>La debida diligencia en derechos humanos implica</p>
                             <div className="flex justify-center">
-                                <select disabled={resultadosComprobados} name="" id="" defaultValue="perdidas" className={`px-3 py-1 mx-auto my-1 border ${resultados.pregunta2 === 'incorrecto' ? 'border-red-500' : 'border-blue-500'} rounded`} style={{width:'349px'}} onChange={(e) => handleChange(e, 'pregunta2')}>
-                                    <option value="terceros">Terceros afectados por la actividad</option>
-                                    <option value="perdidas">Pérdidas sociales</option>
-                                    <option value="impacto">Impacto ambiental desmedido</option>
+                                <select disabled={resultadosComprobados} name="" id="" defaultValue="omitir" className={`px-3 py-1 mx-auto my-1 border ${resultados.pregunta2 === 'incorrecto' ? 'border-red-500' : 'border-blue-500'} rounded`} style={{width:'349px'}} onChange={(e) => handleChange(e, 'pregunta2')}>
+                                    <option value="omitir">Omitir impactos menores en los derechos humanos</option>
+                                    <option value="identificar">Identificar y mitigar los impactos negativos en los derechos humanos</option>
+                                    <option value="informar">Informar únicamente a los accionistas sobre los derechos humanos</option>
                                 </select>
                                 {resultados.pregunta2 === 'correcto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-green-500 rounded-full"></div></div>}
                                 {resultados.pregunta2 === 'incorrecto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-red-500 rounded-full"></div></div>}
