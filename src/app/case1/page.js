@@ -5,9 +5,9 @@ import { Footer } from "@/app/components/Footer"
 import { Header } from "../components/Header"
 import dynamic from 'next/dynamic';
 import Image from "next/image";
-import GestionDDHH from "@/app/assets/case1/case1-image3.jpg"
-import Pasos from "@/app/assets/case1/case1-image4.jpg"
-import Pilares from "@/app/assets/case1/pilares.png"
+import GestionDDHH from "@/app/assets/case1/case1-image3.webp"
+import Pasos from "@/app/assets/case1/case1-image4.webp"
+import Pilares from "@/app/assets/case1/pilares.webp"
 import { Activity1 } from "./components/Activity1";
 import { Activity2 } from "./components/Activity2";
 import ShimmerButton from "../components/magicui/shimmer-button";
