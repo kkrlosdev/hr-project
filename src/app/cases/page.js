@@ -35,7 +35,7 @@ export default function Cases(){
                 </video>
             </header>
 
-            <main className="flex justify-center my-2 space-x-36">
+            <main className="flex flex-col justify-center my-2 md:flex-row lg:flex-row xl:flex-row 2xl:flex-row space-x-36">
                 
                 <section className="relative flex flex-col items-center">
                     <h1 className="self-start font-semibold blue-gelco">Caso 1</h1>
@@ -60,8 +60,7 @@ export default function Cases(){
                     </Link>
                     <KnowMoreButton color="bg-pink-gelco" href="./case2/resources"/>
                 </section>
-                
-                
+
                 <section className="flex flex-col items-center">
                     <h1 className="self-start font-semibold cyan-gelco">Caso 3</h1>
                     <Link href="/case3">

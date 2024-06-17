@@ -12,7 +12,7 @@ const App = () => (
     <>
         <Carousel arrows infinite={true}>
             {images.map((image, index) => (
-                <div key={index} className="relative w-full h-72"> {}
+                <div key={index} className="relative w-full mt-2 h-[420px]"> {}
                     <Image 
                         src={image} 
                         alt={`Imagen ${index + 1}`} 
