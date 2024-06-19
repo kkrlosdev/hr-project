@@ -3,9 +3,9 @@ import { Carousel } from 'antd';
 import Image from 'next/image';
 
 const images = [
-    '/assets/image123.jpg',
-    '/assets/case3-background.webp',
     '/assets/ddhh_background.webp',
+    '/assets/case3-background.webp',
+    '/assets/image123.jpg',
 ];
 
 const App = () => (

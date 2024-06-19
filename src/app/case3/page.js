@@ -63,9 +63,7 @@ export default function Case3(){
 
                 <hr className="hr-gradient"/>
 
-                <section className="flex flex-col items-center justify-center mx-auto mb-4 text-justify" style={{width: "650px"}}>
-                    <h1 className="self-start my-2 text-3xl font-semibold cyan-gelco">Introducción</h1>
-
+                <SectionComponent title="Introducción" width="650px">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-4 w-14 h-14">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
                     </svg>
@@ -84,7 +82,7 @@ export default function Case3(){
 
                     <p className="text-xl">Para ello, <span className="cyan-gelco">las empresas ponen a disposición de los afectados mecanismos de reclamación </span>que permiten hacer llegar sus quejas o inquietudes. De este modo, se puede reparar el daño causado a nuestras comunidades, empleados y cadena de valor.</p>
                     <p className="mt-1 text-xl">Los Estados, por su parte, <span className="cyan-gelco">deben garantizar que los afectados tienen acceso a mecanismos de reparación judiciales y extrajudiciales.</span></p>
-                </section>
+                </SectionComponent>
 
                 <SectionComponent title="Los mecanismos de remediación">
                     <p className="mt-3 text-xl">Estamos <span className="cyan-gelco">comprometidos a crear un ambiente de trabajo propio y de nuestros grupos de interés</span> que fomente la visibilización, el apoyo y la apertura de la comunicación hacia el respeto de los Derechos Humanos.  Cuando se hace necesario, buscamos significado y consulta con expertos externos, incluidos los críticos y líderes de pensamiento reconocidos en materia de derechos humanos</p>
@@ -135,10 +133,8 @@ export default function Case3(){
 
             <hr className="my-5 hr-gradient"></hr>
 
-            <section className="flex flex-col items-center justify-center mx-auto my-2 text-justify" style={{width: "750px"}}>
-                <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">Mecanismos de reclamación a nivel operacional</h1>
-                <p className="text-xl">Los mecanismos de reclamación a nivel operacional contribuyen a la responsabilidad de respetar los Derechos Humanos por parte de las empresas y retroalimentan el proceso de Debida Diligencia.</p>
-                
+        <SectionComponent title="Mecanismos de reclamación a nivel operacional" width="750px">
+                <p className="mt-1 text-xl">Los mecanismos de reclamación a nivel operacional contribuyen a la responsabilidad de respetar los Derechos Humanos por parte de las empresas y retroalimentan el proceso de Debida Diligencia.</p>                
                 <div className="flex items-center w-full h-20 gap-4 my-4 rounded-lg shadow-xl bg-cyan-gelco hover:cursor-pointer" id="DefAndFunc" onClick={() => handleToggleVisibility('text1')}>
                     <button className="ml-4">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="size-6">
@@ -176,77 +172,72 @@ export default function Case3(){
                     <p className="text-xl">Además, no se debe privar a ninguna persona de poder interponer quejas o denuncias en Materia de Derechos Humanos, cuando considere que la operación impacta negativamente.</p>
                 </div>
 
-            <div>
-                <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">Línea ética</h1>
-                <p className="text-xl">Es un mecanismo administrado por un tercero en el que cualquier persona interna o externa a la organización <span className="cyan-gelco">puede presentar quejas o denuncias</span> incluso anónimas, relacionadas con eventos de fraude/corrupción o conductas contrarias al código de ética, mediante los siguientes canales:</p>
-                <Image src={LineaEtica} alt="Línea ética" width={800} height={300} className="my-4"/>
-                <p className="text-xl">Se puede acceder directamente a través de los enlaces indicados o, a través de nuestra página web <Link target="_blank" href="https://www.gelcointernational.com/contacto/" className="underline cyan-gelco">gelcointernational.com</Link> en la sección <span className="cyan-gelco">Contáctenos &gt; Línea Ética &gt; Planta Barranquilla</span></p>
-                <p className="mt-2 text-xl">Los tipos de incidentes asociados con DDHH que se pueden reportar por este canal (entre otros temas relacionados relacionados con el manual de ética y transparencia) son:</p>
-                <ul className="p-5 mt-1 text-xl list-disc">
-                    <li className="list-item">Violencia o amenaza</li>
-                    <li className="list-item">Violación de derechos humanos, derechos laborales o privacidad de datos</li>
-                    <li className="list-item">Discriminación o acoso</li>
-                    <li className="list-item">Contaminación al ambiente</li>
-                    <li className="list-item">Afectación a la salud de los trabajadores</li>
-                </ul>
-
-
                 <div>
-                    <h2 className="self-start text-2xl font-semibold cyan-gelco">Comité de convivencia laboral (COCOLA)</h2>
-                    <p className="my-1 text-xl">
-                        Conjunto de personas, con representación de la empresa y de los trabajadores, que <span className="cyan-gelco">se encargan de recibir y dar trámite a las quejas presentadas</span> en las que se describan situaciones que puedan constituir acoso laboral, de acuerdo con lo definido en la Ley 1010 de 2006.
-                    </p>
-                    <p className="my-1 text-xl">
-                        Por este mecanismo <span className="cyan-gelco">no se aceptan quejas o denuncias anónimas.</span> Toda queja al comité de convivencia deberá presentarse por escrito, a través del formato SS-RG-30, el cual puede ser solicitado en medio impreso a cualquier miembro del comité o diligenciarse en formato electrónico, al cual se puede acceder a través del siguiente enlace o código QR:
-                    </p>
-                    <Image src={Cocola} alt="Contacto Cocola" className="ml-10"/>
-                    <p className="my-1 text-xl">
-                    La queja debe presentarse en un plazo <span className="cyan-gelco">no superior a los seis (6) meses</span> después de que hayan ocurrido los hechos y debe indicarse claramente la fecha de los eventos, motivo de la queja y suministrar evidencias siempre que sea posible.  Toda la información suministrada y la que se derive del tratamiento del caso será tratada de manera confidencial por el COCOLA, con conocimiento de Gestión Humana y la Gerencia de Operaciones.
-                    </p>
+                    <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">Línea ética</h1>
+                    <p className="text-xl">Es un mecanismo administrado por un tercero en el que cualquier persona interna o externa a la organización <span className="cyan-gelco">puede presentar quejas o denuncias</span> incluso anónimas, relacionadas con eventos de fraude/corrupción o conductas contrarias al código de ética, mediante los siguientes canales:</p>
+                    <Image src={LineaEtica} alt="Línea ética" width={800} height={300} className="my-4"/>
+                    <p className="text-xl">Se puede acceder directamente a través de los enlaces indicados o, a través de nuestra página web <Link target="_blank" href="https://www.gelcointernational.com/contacto/" className="underline cyan-gelco">gelcointernational.com</Link> en la sección <span className="cyan-gelco">Contáctenos &gt; Línea Ética &gt; Planta Barranquilla</span></p>
+                    <p className="mt-2 text-xl">Los tipos de incidentes asociados con DDHH que se pueden reportar por este canal (entre otros temas relacionados relacionados con el manual de ética y transparencia) son:</p>
+                    <ul className="p-5 mt-1 text-xl list-disc">
+                        <li className="list-item">Violencia o amenaza</li>
+                        <li className="list-item">Violación de derechos humanos, derechos laborales o privacidad de datos</li>
+                        <li className="list-item">Discriminación o acoso</li>
+                        <li className="list-item">Contaminación al ambiente</li>
+                        <li className="list-item">Afectación a la salud de los trabajadores</li>
+                    </ul>
+                    <div>
+                        <h2 className="self-start text-2xl font-semibold cyan-gelco">Comité de convivencia laboral (COCOLA)</h2>
+                        <p className="my-1 text-xl">
+                            Conjunto de personas, con representación de la empresa y de los trabajadores, que <span className="cyan-gelco">se encargan de recibir y dar trámite a las quejas presentadas</span> en las que se describan situaciones que puedan constituir acoso laboral, de acuerdo con lo definido en la Ley 1010 de 2006.
+                        </p>
+                        <p className="my-1 text-xl">
+                            Por este mecanismo <span className="cyan-gelco">no se aceptan quejas o denuncias anónimas.</span> Toda queja al comité de convivencia deberá presentarse por escrito, a través del formato SS-RG-30, el cual puede ser solicitado en medio impreso a cualquier miembro del comité o diligenciarse en formato electrónico, al cual se puede acceder a través del siguiente enlace o código QR:
+                        </p>
+                        <Image src={Cocola} alt="Contacto Cocola" className="ml-10"/>
+                        <p className="my-1 text-xl">
+                        La queja debe presentarse en un plazo <span className="cyan-gelco">no superior a los seis (6) meses</span> después de que hayan ocurrido los hechos y debe indicarse claramente la fecha de los eventos, motivo de la queja y suministrar evidencias siempre que sea posible.  Toda la información suministrada y la que se derive del tratamiento del caso será tratada de manera confidencial por el COCOLA, con conocimiento de Gestión Humana y la Gerencia de Operaciones.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 className="self-start my-2 text-2xl font-semibold cyan-gelco">Línea verde</h2>
+                        <p className="text-xl">
+                            A través de esta serie de mecanismos se pueden enviar preguntas, quejas, reclamos o solicitudes relacionadas con el desempeño ambiental de la empresa:
+                        </p>
+                        <Image src={LineaVerde} alt="Línea Verde" className="my-2 ml-8"/>
+                    </div>
                 </div>
-                <div>
-                    <h2 className="self-start my-2 text-2xl font-semibold cyan-gelco">Línea verde</h2>
-                    <p className="text-xl">
-                        A través de esta serie de mecanismos se pueden enviar preguntas, quejas, reclamos o solicitudes relacionadas con el desempeño ambiental de la empresa:
-                    </p>
-                    <Image src={LineaVerde} alt="Línea Verde" className="my-2 ml-8"/>
-                </div>
-            </div>
+            </SectionComponent>
 
-
-            </section>
-
-            <section className="flex flex-col items-center justify-center mx-auto my-4 text-justify" style={{width: "750px"}}>
-                <h1 className="self-start text-2xl font-semibold cyan-gelco">Mecanismos de reclamación de Gelco</h1>
+            <SectionComponent title="Mecanismos de reclamación de Gelco" width="750px">
                 <video controls className="w-full my-2">
                     <source src="/videos/derechos.mp4" type="video/mp4"></source>
                 </video>
-            </section>
+            </SectionComponent>
 
+            <div className="mb-4">
+                <SectionComponent title="Actividades" width="800px">
+                    <p className="self-start text-xl">Pon en práctica lo aprendido, realizando las siguientes actividades</p>
+                    <div className="flex items-center justify-center my-2">
+                        <div id="activity1button" onClick={showActivity1}>
+                            <ShimmerButton>Actividad 1</ShimmerButton>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="blue" className="mx-4 size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
 
-            <section className="flex flex-col items-center mx-auto my-6 overflow-hidden text-justify" style={{width: "800px"}}>
-                <h1 className="self-start my-1 text-2xl font-semibold cyan-gelco">Actividades</h1>
-                <p className="self-start text-xl">Pon en práctica lo aprendido, realizando las siguientes actividades</p>
-                <div className="flex items-center justify-center my-2">
-                    <div id="activity1button" onClick={showActivity1}>
-                        <ShimmerButton>Actividad 1</ShimmerButton>
+                        <div id="activity2button" onClick={showActivity2}>
+                            <ShimmerButton>Actividad 2</ShimmerButton>
+                        </div>
+
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="blue" className="mx-4 size-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                    </svg>
-
-                    <div id="activity2button" onClick={showActivity2}>
-                        <ShimmerButton>Actividad 2</ShimmerButton>
+                    <div id="activity1" hidden={visibleActivity !== 'activity1'}>
+                        <Activity1/>
                     </div>
-
-                </div>
-                <div id="activity1" hidden={visibleActivity !== 'activity1'}>
-                    <Activity1/>
-                </div>
-                <div id="activity2" hidden={visibleActivity !== 'activity2'}>
-                    <Activity2/>
-                </div>
-            </section>
+                    <div id="activity2" hidden={visibleActivity !== 'activity2'}>
+                        <Activity2/>
+                    </div>
+                </SectionComponent>
+            </div>
 
             <Footer/>
             </main>

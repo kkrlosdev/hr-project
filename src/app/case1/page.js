@@ -53,9 +53,7 @@ export default function Case1(){
 
             <hr className="hr-gradient"/>
 
-            <section className="flex flex-col items-center justify-center mx-auto mb-4 text-justify" style={{width: "650px"}}>
-
-                <h1 className="self-start my-4 text-2xl font-semibold cyan-gelco">Introducción</h1>
+            <SectionComponent title="Introducción" width="650px">
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-4 w-14 h-14">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
@@ -86,16 +84,14 @@ export default function Case1(){
                 Algo que nos permite construir una <span className="cyan-gelco">vida en común digna, satisfactoria e igualitaria,</span> ¿puedes imaginarlo?
                 </p>
 
-            </section>
+            </SectionComponent>
 
-            <section className="flex flex-col items-center justify-center mx-auto my-4 text-justify" style={{width: "770px"}}>
-                <h1 className="self-start my-2 text-2xl font-semibold cyan-gelco">¿Qué son los derechos humanos?</h1>
+            <SectionComponent title="¿Qué son los derechos humanos?" width="770px">
                 <p className="self-start mb-3">Mira este vídeo y descubre qué son los Derechos Humanos</p>
-
                 <video controls className="w-full my-2">
                     <source src="/videos/derechos.mp4" type="video/mp4"></source>
                 </video>
-            </section>
+            </SectionComponent>
 
             <hr className="my-10 hr-gradient"></hr>
 
