@@ -5,7 +5,7 @@ import { InfoCase } from "../components/InfoCase"
 import Image from "next/image"
 import Image1Case3 from "@/app/assets/case3/case3-image1.webp"
 import LineaEtica from "@/app/assets/case3/case3-image2.webp"
-import Cocola from "@/app/assets/case3/ContactoCocola.webp"
+import Cocola from "@/app/assets/case3/Cocola.webp"
 import LineaVerde from "@/app/assets/case3/LineaVerde.webp"
 import Link from "next/link"
 import { Footer } from "../components/Footer"
@@ -15,6 +15,7 @@ import { Activity2 } from "./components/activities/Activity2"
 import ShimmerButton from "../components/magicui/shimmer-button"
 import { ClipLoader } from "react-spinners"
 import { SectionComponent } from "../components/SectionComponent"
+import QRCocola from '@/app/case3/components/QRCocola'
 
 export default function Case3(){
     const [visibility, setVisibility] = useState({
@@ -193,8 +194,11 @@ export default function Case3(){
                         <p className="my-1 text-xl">
                             Por este mecanismo <span className="cyan-gelco">no se aceptan quejas o denuncias anónimas.</span> Toda queja al comité de convivencia deberá presentarse por escrito, a través del formato SS-RG-30, el cual puede ser solicitado en medio impreso a cualquier miembro del comité o diligenciarse en formato electrónico, al cual se puede acceder a través del siguiente enlace o código QR:
                         </p>
-                        <Image src={Cocola} alt="Contacto Cocola" className="ml-10"/>
-                        <p className="my-1 text-xl">
+                        <div className="flex items-center justify-center">
+                            <Link href="https://forms.office.com/r/pkh1QJ4fbj?origin=lprLink" target="_blank"><Image src={Cocola} alt="Contacto Cocola" className=" w-[35rem] h-[7.5rem] mt-5"/></Link>
+                            <QRCocola />
+                        </div>
+                        <p className="my-2 text-xl">
                         La queja debe presentarse en un plazo <span className="cyan-gelco">no superior a los seis (6) meses</span> después de que hayan ocurrido los hechos y debe indicarse claramente la fecha de los eventos, motivo de la queja y suministrar evidencias siempre que sea posible.  Toda la información suministrada y la que se derive del tratamiento del caso será tratada de manera confidencial por el COCOLA, con conocimiento de Gestión Humana y la Gerencia de Operaciones.
                         </p>
                     </div>
