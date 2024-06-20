@@ -50,8 +50,8 @@ export function Activity1(){
                                         <option value="remediar">Remediar el impacto ambiental</option>
                                         <option value="reconocer">Reconocer grupos de interés</option>
                                 </select>
-                                {resultados.pregunta1 === 'correcto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-green-500 rounded-full"></div></div>}
-                                {resultados.pregunta1 === 'incorrecto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-red-500 rounded-full"></div></div>}
+                                {resultados.pregunta1 === 'correcto' && <div className="flex items-center justify-center"><div className="flex items-center justify-center w-6 h-6 ml-3 bg-green-500 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-4"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg></div></div>}
+                                {resultados.pregunta1 === 'incorrecto' && <div className="flex items-center justify-center"><div className="flex items-center justify-center w-6 h-6 ml-3 bg-red-500 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-4"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12"/></svg></div></div>}
                             </div>
                         </li>
                         <li>
@@ -62,8 +62,8 @@ export function Activity1(){
                                     <option value="identificar">Identificar y mitigar los impactos negativos en los derechos humanos</option>
                                     <option value="informar">Informar únicamente a los accionistas sobre los derechos humanos</option>
                                 </select>
-                                {resultados.pregunta2 === 'correcto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-green-500 rounded-full"></div></div>}
-                                {resultados.pregunta2 === 'incorrecto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-red-500 rounded-full"></div></div>}
+                                {resultados.pregunta2 === 'correcto' && <div className="flex items-center justify-center"><div className="flex items-center justify-center w-6 h-6 ml-3 bg-green-500 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-4"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg></div></div>}
+                                {resultados.pregunta2 === 'incorrecto' && <div className="flex items-center justify-center"><div className="flex items-center justify-center w-6 h-6 ml-3 bg-red-500 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-4"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12"/></svg></div></div>}
                             </div>
                         </li>
                         <li>
@@ -74,8 +74,8 @@ export function Activity1(){
                                     <option value="grupodeinteres">Son un grupo de interés prioritario</option>
                                     <option value="nosonimportantes">No son tan importantes</option>
                                 </select>
-                                {resultados.pregunta3 === 'correcto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-green-500 rounded-full"></div></div>}
-                                {resultados.pregunta3 === 'incorrecto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-red-500 rounded-full"></div></div>}
+                                {resultados.pregunta3 === 'correcto' && <div className="flex items-center justify-center"><div className="flex items-center justify-center w-6 h-6 ml-3 bg-green-500 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-4"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg></div></div>}
+                                {resultados.pregunta3 === 'incorrecto' && <div className="flex items-center justify-center"><div className="flex items-center justify-center w-6 h-6 ml-3 bg-red-500 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-4"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12"/></svg></div></div>}
                             </div>
                         </li>
                     </ol>

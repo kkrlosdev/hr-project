@@ -52,8 +52,8 @@ export function Activity2(){
                                         <option value="civilesclasicos">Derechos cíviles y políticos clásicos</option>
                                         <option value="solidaridad">Derechos de la solidaridad</option>
                                 </select>
-                                {resultados.pregunta1 === 'correcto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-green-500 rounded-full"></div></div>}
-                                {resultados.pregunta1 === 'incorrecto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-red-500 rounded-full"></div></div>}
+                                {resultados.pregunta1 === 'correcto' && <div className="flex items-center justify-center"><div className="flex items-center justify-center w-6 h-6 ml-3 bg-green-500 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-4"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg></div></div>}
+                                {resultados.pregunta1 === 'incorrecto' && <div className="flex items-center justify-center"><div className="flex items-center justify-center w-6 h-6 ml-3 bg-red-500 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-4"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12"/></svg></div></div>}
                             </div>
                         </li>
                         <li>
@@ -64,8 +64,8 @@ export function Activity2(){
                                         <option value="solidaridad2">Derechos de la solidaridad</option>
                                         <option value="economicossociales2">Derechos ecónomicos, sociales y culturales</option>
                                 </select>
-                                {resultados.pregunta2 === 'correcto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-green-500 rounded-full"></div></div>}
-                                {resultados.pregunta2 === 'incorrecto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-red-500 rounded-full"></div></div>}
+                                {resultados.pregunta2 === 'correcto' && <div className="flex items-center justify-center"><div className="flex items-center justify-center w-6 h-6 ml-3 bg-green-500 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-4"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg></div></div>}
+                                {resultados.pregunta2 === 'incorrecto' && <div className="flex items-center justify-center"><div className="flex items-center justify-center w-6 h-6 ml-3 bg-red-500 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-4"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12"/></svg></div></div>}
                             </div>
                         </li>
                         <li>
@@ -76,8 +76,8 @@ export function Activity2(){
                                         <option value="economicossociales3">Derechos ecónomicos, sociales y culturales</option>
                                         <option value="solidaridad3">Derechos de la solidaridad</option>
                                 </select>
-                                {resultados.pregunta3 === 'correcto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-green-500 rounded-full"></div></div>}
-                                {resultados.pregunta3 === 'incorrecto' && <div className="flex items-center justify-center"><div className="w-4 h-4 ml-2 bg-red-500 rounded-full"></div></div>}
+                                {resultados.pregunta3 === 'correcto' && <div className="flex items-center justify-center"><div className="flex items-center justify-center w-6 h-6 ml-3 bg-green-500 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-4"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg></div></div>}
+                                {resultados.pregunta3 === 'incorrecto' && <div className="flex items-center justify-center"><div className="flex items-center justify-center w-6 h-6 ml-3 bg-red-500 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-4"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12"/></svg></div></div>}
                             </div>
                         </li>
                     </ol>
