@@ -1,9 +1,12 @@
+// Next Components
 import Image from "next/image";
-import {Logo} from "./components/Logo"
+import Link from "next/link";
+// Image Imports
+import { Logo } from "./components/Logo"
 import UkIcon from "@/app/assets/uk-icon.png"
 import EsIcon from "@/app/assets/spain-icon.png"
+// MagicUi Components
 import TypingAnimation from "./components/magicui/typing-animation";
-import Link from "next/link";
 import ShimmerButton from "./components/magicui/shimmer-button";
 
 export default function Home() {

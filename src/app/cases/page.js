@@ -1,11 +1,15 @@
 "use client"
-import {Logo} from "../components/Logo"
+// Next Components
 import Image from "next/image"
+// Image Imports
+import { Logo } from "../components/Logo"
 import derechos_humanos_card from "@/app/assets/derechos_humanos.svg"
 import debida_diligencia_card from "@/app/assets/debida_diligencia.svg"
 import remediacion_card from "@/app/assets/remediacion.webp"
+// React Components
 import { useState, useEffect } from "react"
 import { ClipLoader } from "react-spinners"
+// Components
 import { CaseComponent } from "../components/CasesComponent"
 
 export default function Cases(){

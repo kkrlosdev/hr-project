@@ -1,22 +1,25 @@
 "use client"
+// Components
 import { BackButton} from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
 import { Footer } from "@/app/components/Footer"
 import { Header } from "../components/Header"
-import dynamic from 'next/dynamic';
-import Image from "next/image";
-import GestionDDHH from "@/app/assets/case1/case1-image3.webp"
-import Pasos from "@/app/assets/case1/case1-image4.webp"
-import Pilares from "@/app/assets/case1/pilares.webp"
+import { SectionComponent } from "../components/SectionComponent"
 import { Activity1 } from "./components/Activity1";
 import { Activity2 } from "./components/Activity2";
 import ShimmerButton from "../components/magicui/shimmer-button";
+// Next Components
+import Image from "next/image";
+import dynamic from 'next/dynamic';
+// Image Imports
+import GestionDDHH from "@/app/assets/case1/case1-image3.webp"
+import Pasos from "@/app/assets/case1/case1-image4.webp"
+import Pilares from "@/app/assets/case1/pilares.webp"
+// React Components
 import { useState, useEffect } from "react";
 import { ClipLoader } from "react-spinners"
-import { SectionComponent } from "../components/SectionComponent"
 
 const DynamicCarousel = dynamic(() => import('@/app/components/Carousel'), { ssr: false });
-
 
 export default function Case1(){
     const [visibleActivity, setVisibleActivity] = useState('activity1');

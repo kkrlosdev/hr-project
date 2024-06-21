@@ -1,6 +1,9 @@
 "use client"
+// Components
 import { BackButton } from "@/app/components/BackButton"
+// Next Components
 import Link from "next/link"
+// React Components
 import { useState, useEffect } from "react"
 import { ClipLoader } from "react-spinners"
 

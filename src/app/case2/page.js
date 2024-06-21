@@ -1,22 +1,25 @@
 "use client"
+// Components
 import { BackButton } from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
-import { Footer } from "@/app/components/Footer"
 import { Header } from "../components/Header"
-import Image from "next/image"
-import Image1 from "@/app/assets/case2/case2-image1.webp"
-import Image2 from "@/app/assets/case2/case2-imagen2.webp"
-import Image3 from "@/app/assets/case2/case2-image3.webp"
+import { Footer } from "@/app/components/Footer"
 import { ImpactRelationTable } from "./components/Table"
 import { Table2 } from "./components/Table2"
 import { Table3 } from "./components/Table3"
 import { Table4 } from "./components/Table4"
-import ShimmerButton from "../components/magicui/shimmer-button"
-import { useState, useEffect } from "react"
+import { SectionComponent } from "../components/SectionComponent"
 import { Activity1 } from "./components/activities/Activity1"
 import { Activity2 } from "./components/activities/Activity2"
+import ShimmerButton from "../components/magicui/shimmer-button"
+// Image Imports
+import Image from "next/image"
+import Image1 from "@/app/assets/case2/case2-image1.webp"
+import Image2 from "@/app/assets/case2/case2-imagen2.webp"
+import Image3 from "@/app/assets/case2/case2-image3.webp"
+// React Components
 import { ClipLoader } from "react-spinners"
-import { SectionComponent } from "../components/SectionComponent"
+import { useState, useEffect } from "react"
 
 export default function Case2(){
     const [visibleActivity, setVisibleActivity] = useState('activity1');

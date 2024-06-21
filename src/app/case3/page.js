@@ -1,20 +1,24 @@
 "use client"
+// React Components
+import { ClipLoader } from "react-spinners"
 import { useEffect, useState } from "react"
+// Components
 import { BackButton } from "../components/BackButton"
 import { InfoCase } from "../components/InfoCase"
+import { Header } from "../components/Header"
+import { Footer } from "../components/Footer"
+import { Activity1 } from "./components/activities/Activity1"
+import { Activity2 } from "./components/activities/Activity2"
+import { SectionComponent } from "../components/SectionComponent"
+import ShimmerButton from "../components/magicui/shimmer-button"
+// Next Components
 import Image from "next/image"
+import Link from "next/link"
+// Image Imports
 import Image1Case3 from "@/app/assets/case3/case3-image1.webp"
 import LineaEtica from "@/app/assets/case3/case3-image2.webp"
 import Cocola from "@/app/assets/case3/Cocola.webp"
 import LineaVerde from "@/app/assets/case3/LineaVerde.webp"
-import Link from "next/link"
-import { Footer } from "../components/Footer"
-import { Header } from "../components/Header"
-import { Activity1 } from "./components/activities/Activity1"
-import { Activity2 } from "./components/activities/Activity2"
-import ShimmerButton from "../components/magicui/shimmer-button"
-import { ClipLoader } from "react-spinners"
-import { SectionComponent } from "../components/SectionComponent"
 import QRCocola from '@/app/case3/components/QRCocola'
 
 export default function Case3(){
