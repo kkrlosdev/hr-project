@@ -94,3 +94,7 @@
 select:focus{
   outline: none;
 }
+
+p > span{
+  font-weight: 550;
+}
