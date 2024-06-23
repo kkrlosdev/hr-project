@@ -92,7 +92,6 @@ export default function Case3(){
                 <SectionComponent title="Los mecanismos de remediación">
                     <p className="mt-3 text-xl">Estamos <span className="cyan-gelco">comprometidos a crear un ambiente de trabajo propio y de nuestros grupos de interés</span> que fomente la visibilización, el apoyo y la apertura de la comunicación hacia el respeto de los Derechos Humanos.  Cuando se hace necesario, buscamos significado y consulta con expertos externos, incluidos los críticos y líderes de pensamiento reconocidos en materia de derechos humanos</p>
 
-
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="my-4 w-14 h-14">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
                     </svg>
@@ -121,7 +120,7 @@ export default function Case3(){
 
                 <SectionComponent title="Mecanismos de reclamación estatales">
                     <p className="mt-4 text-xl">El término de mecanismo de reclamaciones incluye cualquier proceso que permita <span className="cyan-gelco">plantear reclamaciones y reparar violaciones de los Derechos Humanos</span> relacionadas con actividades empresariales.</p>
-                    <Image src={Image1Case3} alt="Hola" height={290} width={280}/>
+                    <Image src={Image1Case3} alt="Imagen ilustrativa DDHH" height={290} width={280}/>
                     <p className="my-2 text-xl">Estos mecanismos y la manera en que se puede acceder a ellos deben ser conocidos plenamente por los potenciales afectados. En caso contrario, el estado debe brindar asistencia para ello.</p>
                     <p className="my-2 text-xl">Los mecanismos estatales de reclamación, tanto judiciales como extrajudiciales, deben <span className="cyan-gelco">constituir la base de un sistema más amplio de reparación.</span> Complementariamente, los mecanismos a nivel operacional que implantan las empresas, ofrecen recursos y soluciones de fase temprana.</p>
 

@@ -171,7 +171,7 @@ export default function Case1(){
                 <span className="cyan-gelco"> cualquier tipo de entidad,</span> independientemente de su tamaño, sector o contexto operacional. Y también especifica que las empresas han de cumplir todas las leyes aplicables y respetar los derechos humanos, dondequiera que operen.
             </p>
             <p className="my-2 text-xl">Los Principios Rectores sobre las Empresas y los Derechos Humanos de las Naciones Unidas (PRNU) de 2011, también conocidos como Principios Rectores, son un instrumento internacional que <span className="cyan-gelco">está compuesto por 3 pilares y 31 principios.</span></p>
-            <Image src={Pilares} alt="Nothing" className="my-1"/>
+            <Image src={Pilares} alt="Pilares de los principios rectores" className="my-1"/>
         </SectionComponent>
 
         <Footer/>

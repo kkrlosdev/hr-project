@@ -80,14 +80,14 @@ export default function Case2(){
                 <SectionComponent title="Debida Diligencia en Derechos Humanos" width="770px">
                     <p className="my-2 text-xl">La Debida Diligencia es la base de los Principios Rectores de empresas y Derechos Humanos de Naciones Unidas. Es el proceso que nos sirve para evaluar los impactos reales o potenciales, de nuestra actividad, así como los impactos <span className="cyan-gelco">vinculados a nuestra cadena de valor, incluyendo nuestros socios, proveedores y contratistas.</span></p>                    
                     <p className="my-2 text-xl">Gelco ha tenido en cuenta la <span className="cyan-gelco">Guía de la OCDE</span> de debida diligencia para una conducta empresarial responsable para diseñar y gestionar este proceso con base en estas medidas:</p>
-                    <Image src={Image1} alt="El perro" width="800" height="1" className="my-1"/>
+                    <Image src={Image1} alt="Guía de la OCDE" width="800" height="1" className="my-1"/>
                     <p className="my-1 text-xl">A partir de un primer análisis externo de debida diligencia, realizado con el asesoramiento de un experto externo, <span className="cyan-gelco">se estableció el diagnóstico de la gestión en DDHH</span>, se identificaron las brechas por cubrir y se desarrolló el plan de acción para cerrar las mismas.</p>
                     <p className="text-xl">Conforme lo exigen los estándares internacionales, Gelco llevará a cabo <span className="cyan-gelco">la debida diligencia en derechos humanos cada tres (3) años,</span> con el fin de verificar la gestión de la compañía y los avances respecto al análisis de brechas y plan de acción en DDHH.</p>
                 </SectionComponent>
 
                 <SectionComponent title="Identificación de los grupos de interés en DDHH">
                     <p className="mt-1 text-xl">Para identificar los grupos de interés priorizados para DDHH, se identifican cuáles son  los  derechos  humanos que la empresa  está <span className="cyan-gelco">obligada a no violar, a proteger, a promover y a contribuir en su operación</span> y se asocian con los respectivos grupos de interés.  En el siguiente diagrama se muestran los grupos de interés con los que la empresa entra en relación por el tipo y alcance de su actividad:</p>
-                    <Image src={Image2} alt="Grupos de interés GELCO" className="my-3"/>
+                    <Image src={Image2} alt="Identificación de los grupos de interés en DDHH" className="my-3"/>
                     <p className="text-xl">La responsabilidad de Gelco de respetar los derechos humanos se aplica a todos los derechos humanos internacionalmente reconocidos, pues puede incidir directa o indirectamente en todos ellos.  De esta forma se reconoce que la empresa puede afectar los derechos humanos de sus empleados, contratistas, sus clientes, los proveedores y de quienes se relacionan durante toda la cadena de valor, así como comunidades y otras partes interesadas.</p>
 
                     <h1 className="self-start my-3 text-2xl font-semibold cyan-gelco">Tipos de impacto</h1>
@@ -130,7 +130,7 @@ export default function Case2(){
                     </ol>
 
                     <p className="my-3 text-xl">El siguiente esquema muestra la guía de actuación en los procesos de reparación y remedio, de acuerdo con el nivel de responsabilidad o vinculación de Gelco con situaciones de consecuencias negativas sobre los derechos humanos:</p>
-                    <Image src={Image3} alt="Guía de actuación"/>
+                    <Image src={Image3} alt="Guía de actuación en los procesos de reparación"/>
 
                     <h1 className="self-start my-1 text-xl font-semibold underline cyan-gelco">Pasos para seguir</h1>
                     <ol className="list-decimal">
