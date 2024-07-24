@@ -20,7 +20,7 @@ export function Activity2() {
     };
 
     return (
-        <div className="relative flex flex-col items-center justify-center p-2 my-2 text-justify rounded-lg" style={{width: '600px', border: '1px solid rgb(000, 161, 200)'}}>
+        <div className="relative flex flex-col items-center justify-center p-2 my-2 text-justify rounded-lg" style={{width: '600px', border: '1px solid rgba(0, 0, 0, 0.2)'}}>
             <BorderBeam className="-z-10" delay="1s" colorFrom="#00A1C8" colorTo="#342C7D" size="230" duration="10" borderWidth="1"/>
             <p className="my-1 text-xl">¿Cuál de las siguientes afirmaciones es <span className="font-semibold text-red-500">falsa</span>?</p>
             <ul className="flex flex-col my-1 gap-x-4 list-alpha">
