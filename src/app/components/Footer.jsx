@@ -12,7 +12,7 @@ export function Footer(){
                     </div>
                     <p className="ml-6">¡Construyendo la Gelco del futuro!</p>
                 </div>
-                <div className="flex items-center mr-16 justify-items-center gap-x-10">
+                <div className="flex items-center mr-16 justify-items-center gap-x-16">
                     <div className="my-10">
                         <p className="mb-1 text-xl font-semibold">Recursos</p>
                         <ul className="flex flex-col gap-y-2">
