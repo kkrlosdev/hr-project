@@ -102,8 +102,3 @@ select:focus{
 p > span{
   font-weight: 550;
 }
-
-.text-glow:hover {
-  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;
-  transition: 150ms;
-}
