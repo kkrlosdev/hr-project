@@ -20,7 +20,7 @@ export default function Home() {
         <div style={{ minHeight: '140px' }} className="flex flex-col justify-between">
           <TypingAnimation text="¡Comencemos la formación!" duration={45} className="text-gradient"/>
           <div className="flex justify-center mt-1">
-            <Link href="/cases"><ShimmerButton background="rgb(197, 022, 087);" shimmerSize="2px" className="font-bold">Comenzar</ShimmerButton></Link>
+            <Link href="/cases"><ShimmerButton background="rgb(197, 022, 087);" shimmerSize="2px" className="font-light">Comenzar</ShimmerButton></Link>
           </div>
         </div>
 

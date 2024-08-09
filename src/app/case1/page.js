@@ -47,7 +47,7 @@ export default function Case1(){
             </div>
         ):(
             <>
-        <main className="bordespagina">
+        <main>
             <header className="headerPage1">
                 <BackButton/>
                 <Header/>
@@ -64,7 +64,6 @@ export default function Case1(){
 
                 <p className="self-start text-xl">
                 ¿Puedes imaginar algo <span className="cyan-gelco">fundamental, innato y universal?</span>
-
                 </p>
 
                 <p className="text-xl">    
@@ -111,8 +110,8 @@ export default function Case1(){
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
                     </svg>
                 <p className="my-3 text-xl"><span className="font-semibold cyan-gelco">Interdependencia e interrelación.</span> El cumplimiento de un derecho a menudo depende, total o parcialmente, del cumplimiento de otros derechos. Por ejemplo, el ejercicio efectivo del derecho a la salud puede depender del ejercicio efectivo del derecho a la educación o a la información.</p>
-                <div style={{width: "700px"}} className="p-4 my-5 border rounded border-cyan-600 divide-solid active:border-pink-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="self-start mb-1 size-14">
+                <div style={{width: "700px"}} className="p-4 my-5 border rounded-2xl border-cyan-600 divide-solid">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} className="self-start mb-1 stroke-cyan size-14">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
                         </svg>
                     <p>
@@ -122,13 +121,11 @@ export default function Case1(){
                 </div>
             </SectionComponent>
 
-
         <section className="flex flex-col mx-auto my-4 text-justify" style={{width: "800px"}}>
             <h1 className="self-start my-1 text-2xl font-semibold cyan-gelco">¿Cuáles son los derechos humanos?</h1>
             <p className="my-2 text-xl">La Declaración Universal de los Derechos Humanos, proclamada por la Asamblea General de las Naciones Unidas en París el 10 de diciembre de 1948, <span className="cyan-gelco">es un documento que marca un hito en la historia.</span> Pero recordemos, ¿cuáles son en detalle los Derechos Humanos que existen? ¿y cómo se clasifican? <span className="cyan-gelco">Existen tres categorías:</span></p>
             <DynamicCarousel/>
         </section>
-
 
         <SectionComponent title="La gestión de los DDHH en Gelco">
             <p className="text-xl">El siguiente diagrama representa el ciclo de mejoramiento continuo de la gestión de los Derechos Humanos en Gelco:</p>

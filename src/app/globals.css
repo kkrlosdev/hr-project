@@ -42,6 +42,10 @@
   background-color: rgb(000, 161, 200);
 }
 
+.stroke-cyan{
+  stroke: rgb(000, 161, 200);
+}
+
 .headerPage1{
   background-image: url('/assets/ddhh_background.webp');
   background-repeat: no-repeat;
