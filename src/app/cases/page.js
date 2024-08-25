@@ -31,7 +31,7 @@ export default function Cases(){
             <>
             <header>
                 <Logo />
-                <h1 className="ml-6 text-3xl blue-gelco">DERECHOS <span className="block mt-0">HUMANOS</span> </h1>
+                <h1 className="ml-6 text-3xl font-normal blue-gelco">DERECHOS <span className="block mt-0">HUMANOS</span> </h1>
                 <video muted autoPlay loop className="absolute top-0 left-0 object-cover w-full h-full -z-10">
                     <source src="/videos/background-video2.mp4" type="video/mp4"></source>
                 </video>

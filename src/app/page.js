@@ -16,11 +16,11 @@ export default function Home() {
 
       <section className="SectionWelcomePage">
         <Logo />
-        <h1 className="ml-6 text-4xl font-semibold blue-gelco w-fit">DERECHOS <span className="block mt-0">HUMANOS</span></h1>
+        <h1 className="ml-6 text-4xl font-normal blue-gelco w-fit">DERECHOS <span className="block mt-0">HUMANOS</span></h1>
         <div style={{ minHeight: '140px' }} className="flex flex-col justify-between">
           <TypingAnimation text="¡Comencemos la formación!" duration={45} className="text-gradient"/>
           <div className="flex justify-center mt-1">
-            <Link href="/cases"><ShimmerButton background="rgb(197, 022, 087);" shimmerSize="2px" className="font-light">Comenzar</ShimmerButton></Link>
+            <Link href="/cases"><ShimmerButton background="rgb(197, 022, 087);" shimmerSize="2px" className="font-normal">Comenzar</ShimmerButton></Link>
           </div>
         </div>
 

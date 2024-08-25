@@ -22,7 +22,7 @@ export default function TypingAnimation({ text, duration = 200, className }) {
   return (
     <h1
       className={cn(
-        "text-center font-display text-2xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-[2.75rem] md:leading-[5rem]",
+        "text-center font-display text-2xl font-normal tracking-[-0.02em] drop-shadow-sm md:text-[2.75rem] md:leading-[5rem]",
         className
       )}
     >
