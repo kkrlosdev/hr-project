@@ -31,13 +31,13 @@ export default function Cases(){
             <>
             <header>
                 <Logo />
-                <h1 className="ml-6 font-sans text-3xl blue-gelco">DERECHOS <span className="block mt-0">HUMANOS</span> </h1>
+                <h1 className="my-1 ml-4 font-sans text-3xl blue-gelco">DERECHOS <span className="block mt-0">HUMANOS</span> </h1>
                 <video muted autoPlay loop className="absolute top-0 left-0 object-cover w-full h-full -z-10">
                     <source src="/videos/background-video2.mp4" type="video/mp4"></source>
                 </video>
             </header>
 
-            <main className="flex flex-col justify-center my-2 md:flex-row lg:flex-row xl:flex-row 2xl:flex-row space-x-36">
+            <main className="flex flex-col justify-center md:flex-row lg:flex-row xl:flex-row 2xl:flex-row space-x-36">
                 
                 <CaseComponent title="Caso 1" titleColor="blue-gelco" subtitle="Derechos humanos" redirect="/case1" resourcesLink="/case1/resources" knowMoreColor="bg-blue-gelco" backgroundColor="bg-blue-gelco">
                     <div className="absolute bottom-2 right-2" style={{height:'220px'}}>

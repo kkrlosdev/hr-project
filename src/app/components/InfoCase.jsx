@@ -1,4 +1,5 @@
-import { Logo } from "./Logo"
+import Logo from "@/app/assets/logo.png"
+import Image from "next/image"
 
 export function InfoCase({subtitle}){
     return(
@@ -8,7 +9,7 @@ export function InfoCase({subtitle}){
                         <h1 className="text-5xl">Derechos Humanos</h1>
                         <h2 className="text-2xl">{subtitle}</h2>
                         <div className="flex items-center justify-center w-full h-16 bg-white p-7">
-                            <Logo/>
+                            <Image src={Logo} alt="Logo de Gelco" width={100} height={100}/>
                         </div>
                     </div>
 
