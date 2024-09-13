@@ -124,8 +124,8 @@ export default function Case3(){
                     <p className="my-2 text-xl">Estos mecanismos y la manera en que se puede acceder a ellos deben ser conocidos plenamente por los potenciales afectados. En caso contrario, el estado debe brindar asistencia para ello.</p>
                     <p className="my-2 text-xl">Los mecanismos estatales de reclamación, tanto judiciales como extrajudiciales, deben <span className="cyan-gelco">constituir la base de un sistema más amplio de reparación.</span> Complementariamente, los mecanismos a nivel operacional que implantan las empresas, ofrecen recursos y soluciones de fase temprana.</p>
 
-                    <div style={{width: "700px"}} className="p-4 my-5 border rounded border-cyan-600 divide-solid active:border-pink-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="self-start mb-1 size-14">
+                    <div style={{width: "700px"}} className="p-4 my-5 border rounded-2xl border-cyan-600 divide-solid">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="self-start mb-1 stroke-cyan size-14">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
                         </svg>
 
