@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --blue-gelco: rgb(39, 0, 137);
+  --cyan-gelco: rgb(0, 161, 200);
+  --pink-gelco: rgb(197, 22, 87);
+}
+
 ::selection{
-  background-color: rgb(0, 161, 200);
+  background-color: var(--cyan-gelco);
   color: white;
 }
 
@@ -17,37 +23,37 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(39, 0, 137);
+  background-color: var(--blue-gelco);
   border-radius: 10px;
   border: 3px solid rgb(245, 245, 244);
 }
 
 .pink-gelco{
-  color: rgb(197, 022, 087);
+  color: var(--pink-gelco)
 }
 
 .blue-gelco{
-  color: rgb(052, 044, 125);
+  color: var(--blue-gelco)
 }
 
 .cyan-gelco{
-  color: rgb(000, 161, 200);
+  color: var(--cyan-gelco)
 }
 
 .bg-pink-gelco{
-  background-color: rgb(197, 022, 087);
+  background-color: var(--pink-gelco)
 }
 
 .bg-blue-gelco{
-  background-color: rgb(39, 0, 137);
+  background-color: var(--blue-gelco);
 }
 
 .bg-cyan-gelco{
-  background-color: rgb(000, 161, 200);
+  background-color: var(--cyan-gelco);
 }
 
 .stroke-cyan{
-  stroke: rgb(000, 161, 200);
+  stroke: var(--cyan-gelco);
 }
 
 .headerPage1{
@@ -91,9 +97,8 @@
 .hr-gradient{
   height: 5px;
   border: none;
-  background-image: linear-gradient(to right, rgb(052, 044, 125), rgb(197, 022, 087));
+  background-image: linear-gradient(to right, var(--blue-gelco), var(--pink-gelco));
 }
-
 
 .full-screen-loader {
   display: flex;
