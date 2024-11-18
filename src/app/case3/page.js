@@ -4,7 +4,6 @@ import { ClipLoader } from "react-spinners"
 import { useEffect, useState } from "react"
 // Components
 import { BackButton } from "../components/BackButton"
-import { InfoCase } from "../components/InfoCase"
 import { Header } from "../components/Header"
 import { Footer } from "../components/Footer"
 import { Activity1 } from "./components/activities/Activity1"
@@ -63,7 +62,6 @@ export default function Case3(){
                 <header className="headerPage3">
                     <Header/>
                     <BackButton/>
-                    <InfoCase subtitle={"Remediación"}/>
                 </header>
 
                 <hr className="hr-gradient"/>

@@ -1,7 +1,6 @@
 "use client"
 // Components
 import { BackButton } from "../components/BackButton"
-import { InfoCase } from "../components/InfoCase"
 import { Header } from "../components/Header"
 import { Footer } from "@/app/components/Footer"
 import { ImpactRelationTable } from "./components/Table"
@@ -51,7 +50,6 @@ export default function Case2(){
                 <header className="headerPage2">
                     <Header/>
                     <BackButton/>
-                    <InfoCase subtitle={"Debida Diligencia"}/>
                 </header>
 
                 <hr className="hr-gradient"/>
