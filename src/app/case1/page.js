@@ -1,7 +1,6 @@
 "use client"
 // Components
 import { BackButton} from "../components/BackButton"
-import { InfoCase } from "../components/InfoCase"
 import { Footer } from "@/app/components/Footer"
 import { Header } from "../components/Header"
 import { SectionComponent } from "../components/SectionComponent"
@@ -50,8 +49,7 @@ export default function Case1(){
         <main>
             <header className="headerPage1">
                 <BackButton/>
-                <Header/>
-                <InfoCase subtitle={"Conociendo los derechos humanos"}/>             
+                <Header/>          
             </header>
 
             <hr className="hr-gradient"/>
