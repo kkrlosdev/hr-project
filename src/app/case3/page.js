@@ -10,6 +10,7 @@ import { Activity1 } from "./components/activities/Activity1"
 import { Activity2 } from "./components/activities/Activity2"
 import { SectionComponent } from "../components/SectionComponent"
 import ShimmerButton from "../components/magicui/shimmer-button"
+import NavDock from "../components/Dock"
 // Next Components
 import Image from "next/image"
 import Link from "next/link"
@@ -63,6 +64,8 @@ export default function Case3(){
                     <Header/>
                     <BackButton/>
                 </header>
+
+                <NavDock />
 
                 <hr className="hr-gradient"/>
 

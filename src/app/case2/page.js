@@ -11,6 +11,7 @@ import { SectionComponent } from "../components/SectionComponent"
 import { Activity1 } from "./components/activities/Activity1"
 import { Activity2 } from "./components/activities/Activity2"
 import ShimmerButton from "../components/magicui/shimmer-button"
+import NavDock from "../components/Dock"
 // Image Imports
 import Image from "next/image"
 import Image1 from "@/app/assets/case2/case2-image1.webp"
@@ -51,6 +52,8 @@ export default function Case2(){
                     <Header/>
                     <BackButton/>
                 </header>
+
+                <NavDock />
 
                 <hr className="hr-gradient"/>
 
