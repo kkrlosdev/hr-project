@@ -1,73 +1,32 @@
-"use client";;
+"use client"
+import { useEffect, useState } from "react";
 import { cn } from "@/app/lib/utils";
-import { motion } from "motion/react";
-import { useEffect, useRef, useState } from "react";
 
-export default function TypingAnimation({
-  children,
-  className,
-  duration = 100,
-  delay = 0,
-  as: Component = "div",
-  startOnView = false,
-  ...props
-}) {
-  const MotionComponent = motion.create(Component, {
-    forwardMotionProps: true,
-  });
-
+export default function TypingAnimation({ text, duration = 200, className }) {
   const [displayedText, setDisplayedText] = useState("");
-  const [started, setStarted] = useState(false);
-  const elementRef = useRef(null);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    if (!startOnView) {
-      const startTimeout = setTimeout(() => {
-        setStarted(true);
-      }, delay);
-      return () => clearTimeout(startTimeout);
-    }
-
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          setStarted(true);
-        }, delay);
-        observer.disconnect();
-      }
-    }, { threshold: 0.1 });
-
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, [delay, startOnView]);
-
-  useEffect(() => {
-    if (!started) return;
-
-    let i = 0;
     const typingEffect = setInterval(() => {
-      if (i < children.length) {
-        setDisplayedText(children.substring(0, i + 1));
-        i++;
-      } else {
-        clearInterval(typingEffect);
-      }
+      setDisplayedText((prev) => prev + text.charAt(index));
+      setIndex((prev) => prev + 1);
     }, duration);
 
-    return () => {
+    if (index === text.length) {
       clearInterval(typingEffect);
-    };
-  }, [children, duration, started]);
+    }
+
+    return () => clearInterval(typingEffect);
+  }, [index, text, duration]);
 
   return (
-    (<MotionComponent
-      ref={elementRef}
-      className={cn("text-4xl font-bold leading-[5rem] tracking-[-0.02em]", className)}
-      {...props}>
+    <h1
+      className={cn(
+        "text-center font-display text-2xl font-normal tracking-[-0.02em] drop-shadow-sm md:text-[2.75rem] md:leading-[5rem]",
+        className
+      )}
+    >
       {displayedText}
-    </MotionComponent>)
+    </h1>
   );
 }

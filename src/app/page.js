@@ -18,7 +18,7 @@ export default function Home() {
         <Logo />
         <h1 className="my-2 ml-4 text-4xl font-normal blue-gelco w-fit">DERECHOS <span className="block mt-0">HUMANOS</span></h1>
         <div style={{ minHeight: '140px' }} className="flex flex-col justify-between">
-          <TypingAnimation duration={45} className="font-sans text-center semibold blue-gelco">¡Comencemos la formación!</TypingAnimation>
+          <TypingAnimation text="¡Comencemos la formación!" duration={45} className="font-sans font-semibold blue-gelco"/>
           <div className="flex justify-center mt-1">
             <Link href="/cases"><ShimmerButton background="rgb(197, 022, 087);" shimmerSize="2px" className="font-normal">Comenzar</ShimmerButton></Link>
           </div>

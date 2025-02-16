@@ -7,11 +7,6 @@ import { SectionComponent } from "../components/SectionComponent"
 import { Activity1 } from "./components/Activity1";
 import { Activity2 } from "./components/Activity2";
 import ShimmerButton from "../components/magicui/shimmer-button";
-import { Dock } from "../components/magicui/dock"
-import { DockIcon } from "../components/magicui/dock"
-import Icons from "../components/Icons"
-import TypingAnimation from "../components/magicui/typing-animation"
-import HeroVideoDialog from "../components/magicui/hero-video-dialog"
 // Next Components
 import Image from "next/image";
 import dynamic from 'next/dynamic';
@@ -22,7 +17,6 @@ import Pilares from "@/app/assets/case1/pilares.webp"
 // React Components
 import { useState, useEffect } from "react";
 import { ClipLoader } from "react-spinners"
-import Link from "next/link"
 
 const DynamicCarousel = dynamic(() => import('@/app/components/Carousel'), { ssr: false });
 
@@ -54,26 +48,9 @@ export default function Case1(){
             <>
         <main>
             <header className="headerPage1">
-                <TypingAnimation className="text-white font-bold text-[2.7em] absolute top-[35%] left-2 drop-shadow-md" duration={40}>¿Quieres saber más sobre Derechos Humanos?</TypingAnimation>
-                <TypingAnimation className="text-white font-bold text-[2.7em] absolute top-[45%] left-2 drop-shadow-md" duration={40} delay={40}>¡Desliza hacia abajo y entérate de muchas cosas!</TypingAnimation>
+                <BackButton/>
+                <Header/>          
             </header>
-
-        <div className="dockContainer">
-            <Dock direction="middle">
-                <DockIcon>
-                    <Icons.home className="size-6" />
-                </DockIcon>
-                <DockIcon>
-                    <Icons.user className="size-6" />
-                </DockIcon>
-                <DockIcon>
-                    <Icons.send className="size-6" />
-                </DockIcon>
-                <DockIcon>
-                <   Icons.sun className="size-6" />
-                </DockIcon>
-            </Dock>
-        </div>
 
             <hr className="hr-gradient"/>
 
@@ -111,13 +88,9 @@ export default function Case1(){
 
             <SectionComponent title="¿Qué son los derechos humanos?" width="770px">
                 <p className="self-start mb-3">Mira este vídeo y descubre qué son los Derechos Humanos</p>
-                <HeroVideoDialog
-                    className="block dark:hidden"
-                    animationStyle="top-in-bottom-out"
-                    videoSrc="/videos/derechos.mp4"
-                    thumbnailSrc="/assets/vid_preview.png"
-                    thumbnailAlt="Hero Video"
-                />
+                <video controls className="w-full my-2">
+                    <source src="/videos/derechos.mp4" type="video/mp4"></source>
+                </video>
             </SectionComponent>
 
             <hr className="my-10 hr-gradient"></hr>
