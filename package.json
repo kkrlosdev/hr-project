@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
+    "@radix-ui/react-separator": "^1.1.2",
+    "@radix-ui/react-tooltip": "^1.1.8",
     "antd": "^5.17.3",
     "autoprefixer": "^10.4.19",
     "class-variance-authority": "^0.7.1",

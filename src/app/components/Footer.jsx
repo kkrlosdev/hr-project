@@ -5,7 +5,7 @@ import { LinkFooter } from "./LinkFooter"
 export function Footer(){
     return(
         <>
-            <footer className="flex items-center justify-between w-full h-full mt-10 text-slate-400 bg-blue-gelco">
+            <footer className="flex items-center justify-between w-full h-full mt-12 text-slate-400 bg-blue-gelco">
                 <div className="flex flex-col items-center ml-[170px] my-4">
                     <div className="my-6 ml-4">
                         <Image src={LogoBlanco} height={130} width={130} alt="Logo Gelco" title="Logo de Gelco"/>

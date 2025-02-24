@@ -11,7 +11,8 @@ module.exports = {
     		animation: {
     			'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
     			slide: 'slide var(--speed) ease-in-out infinite alternate',
-    			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear'
+    			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
+    			shine: 'shine var(--duration) infinite linear'
     		},
     		keyframes: {
     			'border-beam': {
@@ -106,6 +107,17 @@ module.exports = {
     				'90%': {
     					bottom: '50%',
     					right: '25%'
+    				}
+    			},
+    			shine: {
+    				'0%': {
+    					'background-position': '0% 0%'
+    				},
+    				'50%': {
+    					'background-position': '100% 100%'
+    				},
+    				to: {
+    					'background-position': '0% 0%'
     				}
     			}
     		},

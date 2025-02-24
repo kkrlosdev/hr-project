@@ -10,9 +10,9 @@ const images = [
 
 const App = () => (
     <>
-        <Carousel arrows infinite={true}>
+        <Carousel autoplay={true} infinite={true} autoplaySpeed={3000} speed={1000} effect='fade'>
             {images.map((image, index) => (
-                <div key={index} className="relative w-full mt-2 h-[420px]"> {}
+                <div key={index} className="relative w-full  h-[420px]"> {}
                     <Image 
                         src={image} 
                         alt={`Imagen ${index + 1}`} 
